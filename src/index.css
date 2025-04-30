@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  height:100%;
+  width: 100%;
+}
+
+.firstlogo{
+  animation: fadeout 2s;
+  animation-duration: 2.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout{
+  0%{
+    opacity:0;
+  }
+  50%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+@keyframes fadein{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@import "tailwindcss";

@@ -1,0 +1,80 @@
+/* body{
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
+.container3{
+    margin-top:50px;
+    padding-bottom:80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 60px;
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.add{
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.div1{
+    height:480px;
+    width:400px;
+    background-color: rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    box-shadow: gray 0px 0px 20px;
+}
+
+.listings{
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color:white;
+}
+
+ul:hover{
+    color: silver;
+}
+
+@media(max-width:1300px){
+    .container3{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:900px){
+    .container3{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+    }
+}
+
+@import "tailwindcss";
