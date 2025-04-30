@@ -10,7 +10,7 @@ function App() {
       <div className="first h-[100%] 2-[100%]">
       <nav className="h-[68px] w-full flex justify-start items-center gap-[8px] bg-gray-800 text-[22px]">
         <img src='door.png' className='homeicon h-[35px]'></img>
-        <h1 className='text-white cursor-pointer' onClick={() => window.location.reload()}>RoomsRentley</h1>
+        <h1 className='text-white cursor-pointer' onClick={() => window.location.reload()}>Roomsley</h1>
         </nav>
 
         <nav className='h-[130px] flex justify-center items-center gap-[28px] md:gap-[60px]'>

@@ -7,7 +7,7 @@ const Listings = () => {
     <>
     <nav className="h-[68px] w-full flex justify-start items-center gap-[8px] bg-gray-800 text-[22px]">
         <img src='door.png' className='homeicon h-[35px]'></img>
-        <Link to='/'><h1 className='text-white'>RoomsRentley</h1></Link>
+        <Link to='/'><h1 className='text-white'>Roomsley</h1></Link>
         </nav>
 
     <div className='listings w-full h-[140px] flex justify-center items-center text-[32px]'>
