@@ -55,7 +55,7 @@ const Listings = () => {
 
     {modal && (<div className="modal" onClick={toggleModal}>
         <div className="overlay" onClick={toggleModal}></div>
-        <div className="contentmodal flex justify-center items-center min-h-[100vh]">
+        <div className="contentmodal flex justify-center items-center min-h-[96vh]">
         <div className="formcontainer sm:w-[400px] sm:h-[560px] w-[320px] h-[580px] rounded-xl">
                 <h1 className="text-center text-[25px] font-small text-gray-800 font-medium">ADD YOUR DETAILS</h1>
                 <form className="form flex flex-col gap-[10px]">
