@@ -44,7 +44,7 @@ function App() {
       <div className='second flex flex-col gap-[120px]'>
         <h1 className='services text-[40px] text-center text font-semibold text-gray-800'>SERVICES</h1>
 
-        <div className='findrooms flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-md'>
+        <div className='findrooms flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-md shadow-gray-800'>
           <img src='dispimg.jpg' className='h-[275px] w-[275px] rounded-[15px]'></img>
 
           <div className='flex flex-col gap-[50px]'>
@@ -57,7 +57,7 @@ function App() {
           </div>
         </div>
 
-        <div className="listrooms flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-2xl">
+        <div className="listrooms flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-md shadow-gray-800">
           <img src='dispimg2.jpg' className='h-[275px] w-[275px] rounded-[15px]'></img>
           <div className='flex flex-col gap-[50px]'>
             <h1 className='text-[32px] text-gray-800 font-medium'>LIST YOUR ROOM</h1>
@@ -69,7 +69,7 @@ function App() {
           </div>
         </div>
 
-        <div className="easydeal flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-2xl">
+        <div className="easydeal flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-md shadow-gray-800">
           <img src='dispimg3.jpg' className='h-[275px] w-[275px] rounded-[15px]'></img>
           <div className='flex flex-col gap-[50px]'>
             <h1 className='text-[32px] text-gray-800 font-medium'>EASY DEAL</h1>
