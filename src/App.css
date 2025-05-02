@@ -262,14 +262,14 @@ ul:hover{
 
 @media(max-width:700px){
   .services{
-    margin-top: 300px;
+    margin-top:150px;
   }
   .padder{
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  .roomimg{
-    margin-top: -200px;
+  .roomimg {
+    transform: translateY(-160px);
   }
 }

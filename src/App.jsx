@@ -22,7 +22,7 @@ function App() {
         <div className='landingcontainer h-[100%] w-[100%] flex flex-col sm:flex-row justify-center items-center'>
           <div className='padder h-[100%] w-[100%]'>
 
-          <div className='flex flex-col md:flex-row h-full w-full justify-between gap-[30px]'>
+          <div className='marginctrl flex flex-col md:flex-row h-full w-full justify-between gap-[30px]'>
               <div className=''>
                   <h1 className='text-[60px] md:text-[90px] font-semibold leading-tight'>Find Perfect<br />Room.</h1>
                   <Link to="/listings">
