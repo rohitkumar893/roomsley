@@ -268,4 +268,8 @@ ul:hover{
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  .roomimg{
+    margin-top: -40px;
+  }
 }
