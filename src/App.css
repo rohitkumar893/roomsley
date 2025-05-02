@@ -29,7 +29,7 @@ nav{
 }
 
 .findrooms, .listrooms, .easydeal{
-  background-color: rgb(234, 231, 231);
+  background-color: rgb(241, 236, 236);
   padding:40px;
 }
 
@@ -270,7 +270,7 @@ ul:hover{
   }
 
   .roomimg {
-    transform: translateY(-170px);
+    transform: translateY(-180px);
   }
 }
 
@@ -278,10 +278,4 @@ ul:hover{
   .roomimg {
     transform: translateY(30px);
   }
-
-@media(min-width:580px){
-  .roomimg {
-    transform: translateY(30px);
-  }
-}
 }
