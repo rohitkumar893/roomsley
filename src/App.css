@@ -115,15 +115,6 @@ ul:hover{
   color:silver;
 }
 
-.cards{
-  margin-top:60px;
-  opacity:0;
-  animation-name: fadein;
-  animation-duration: 1.7s;
-  animation-delay: 0.8s;
-  animation-fill-mode: forwards;
-}
-
 .homeicon{
   margin-left: 22px;
 }
@@ -233,18 +224,10 @@ ul:hover{
 
 
 @media(max-width:1200px){
-  .cards{
-    margin-top:120px;
-  }
-
   .second{
     padding: 30px;
     padding-top:60px;
     padding-bottom:60px;
-  }
-
-  .card1,.card2,.card3{
-    margin-top: -40px;
   }
 }
 
