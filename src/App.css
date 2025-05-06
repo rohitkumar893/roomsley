@@ -43,6 +43,10 @@ nav{
   padding-right: 200px;
 }
 
+.textlogo{
+  text-shadow: white 2px 2px 5px;
+}
+
 .logoimg{
   margin-top: 80px;
   height: 170px;
