@@ -34,7 +34,7 @@ nav{
 }
 
 .services{
-  margin-top: 350px;
+  margin-top: 250px;
   text-shadow: rgba(173, 173, 173, 0.968) 2px 2px 2px;
 }
 
@@ -241,13 +241,6 @@ ul:hover{
 
 
 @media(max-width:1500px){
-.services{
-    margin-top: 30px;
-  }
-}
-
-
-@media(max-width:1500px){
   .services{
     margin-top: 200px;
   }
@@ -283,5 +276,9 @@ ul:hover{
 @media(max-width:780px){
   .second {
     transform: translateY(160px);
+  }
+
+  .roomimg {
+    transform: translateY(80px);
   }
 }
