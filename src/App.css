@@ -34,7 +34,7 @@ nav{
 }
 
 .services{
-  margin-top: 110px;
+  margin-top: 200px;
   text-shadow: rgba(173, 173, 173, 0.968) 2px 2px 2px;
 }
 
@@ -233,11 +233,23 @@ ul:hover{
     padding-top:60px;
     padding-bottom:60px;
   }
+
+  .services{
+    margin-top: 350px;
+  }
 }
+
+
+@media(max-width:1500px){
+.services{
+    margin-top: 30px;
+  }
+}
+
 
 @media(max-width:1200px){
   .services{
-    margin-top: 200px;
+    margin-top: 100px;
   }
 
   .padder{
@@ -249,7 +261,7 @@ ul:hover{
 
 @media(max-width:700px){
   .services{
-    margin-top:150px;
+    margin-top:350px;
   }
   .padder{
     padding-left: 40px;
@@ -267,8 +279,8 @@ ul:hover{
   }
 }
 
-@media(min-width:400px){
+@media(min-width:412px){
   .roomimg {
-    transform: translateY(30px);
+    transform: translateY(-140px);
   }
 }
