@@ -44,8 +44,8 @@ function App() {
       <div className='second flex flex-col gap-[120px]'>
         <h1 className='services text-[40px] text-center text font-semibold text-gray-800'>SERVICES</h1>
 
-        <div className='findrooms flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-md shadow-gray-800'>
-          <img src='dispimg.jpg' className='h-[235px] w-[235px] rounded-[15px]'></img>
+        <div className='findrooms flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-lg shadow-gray-600'>
+          <img src='dispimg.jpg' className='sm:h-[235px] sm:w-[235px] h-full w-full rounded-[15px]'></img>
 
           <div className='flex flex-col gap-[35px]'>
             <h1 className='text-[32px] text-gray-800 font-medium'>FIND ROOMS</h1>
@@ -57,8 +57,8 @@ function App() {
           </div>
         </div>
 
-        <div className="listrooms flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-md shadow-gray-800">
-          <img src='dispimg2.jpg' className='h-[235px] w-[235px] rounded-[15px]'></img>
+        <div className="listrooms flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-lg shadow-gray-600">
+          <img src='dispimg2.jpg' className='sm:h-[235px] sm:w-[235px] h-full w-full rounded-[15px]'></img>
           <div className='flex flex-col gap-[35px]'>
             <h1 className='text-[32px] text-gray-800 font-medium'>LIST YOUR ROOM</h1>
             <p className='text-[18px]'>Got a spare room or property? Turn it into easy income by listing it on our platform. With our List Your Room service, you can connect directly with people looking for a place-no middlemen, no broker fees.
@@ -69,8 +69,8 @@ function App() {
           </div>
         </div>
 
-        <div className="easydeal flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-md shadow-gray-800">
-          <img src='dispimg3.jpg' className='h-[235px] w-[235px] rounded-[15px]'></img>
+        <div className="easydeal flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-lg shadow-gray-600">
+          <img src='dispimg3.jpg' className='sm:h-[235px] sm:w-[235px] h-full w-full rounded-[15px]'></img>
           <div className='flex flex-col gap-[35px]'>
             <h1 className='text-[32px] text-gray-800 font-medium'>EASY DEAL</h1>
             <p className='text-[18px]'>Renting shouldn’t be a headache, and with our Easy Deal service, it’s not. We simplify the whole renting process by helping both tenants and owners with quick, clear, and secure rental agreements.
