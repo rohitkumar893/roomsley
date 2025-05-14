@@ -34,7 +34,7 @@ function App() {
               </div>
 
               <div>
-                <img src='roomimg.jpg' className='roomimg object-cover h-[580px] sm:h-[650px] w-[600px] z-[-1] relative top-[0px] rounded-sm'></img>
+                <img src='roomimg.jpg' className='roomimg object-cover h-[580px] sm:h-[650px] w-[600px] z-[-1] relative top-[0px] rounded-sm shadow-md'></img>
               </div>
              </div>
           </div>
