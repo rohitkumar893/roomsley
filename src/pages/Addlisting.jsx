@@ -33,17 +33,19 @@ const Addlisting = () => {
 
     const handleSubmit = async () => {
         try {
-            const f = await fetch("localhost://3010", {
+            const f = await fetch("http://localhost:3010", {
             method:'POST',            
             headers:{
-                "Content Type":"application/json"
+                "Content-Type":"application/json"
             },
 
-            
+            body: JSON.stringify(formData)
+            })
         }
+        
         catch (err){
-            console.log("Error",err)
-        })
+            console.log("Error",err);
+        }
     }
 
 
