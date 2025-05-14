@@ -41,8 +41,8 @@ function App() {
         </div>
       </div>
 
-      <div className='second flex flex-col gap-[120px]'>
-        <h1 className='services text-[40px] text-center text font-semibold text-gray-800'>SERVICES</h1>
+      <div className='second flex flex-col gap-[100px]'>
+        <h1 className='services rounded-xl text-[40px] text-center text font-semibold text-white bg-gray-800'>SERVICES</h1>
 
         <div className='findrooms flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-lg shadow-gray-600'>
           <img src='dispimg.jpg' className='sm:h-[235px] sm:w-[235px] h-full w-full rounded-[15px]'></img>
