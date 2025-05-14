@@ -31,6 +31,16 @@ const Addlisting = () => {
         setLocation(e.target.value)
     }
 
+    const handleSubmit = async () => {
+        try {
+            const f = await fetch("localhost://3010");
+            method:'POST';
+        }
+        catch (err){
+            console.log("Error",err)
+        }
+    }
+
 
     return(
         <>
@@ -42,7 +52,7 @@ const Addlisting = () => {
             <div className="addlistingcontainer flex flex-col justify-center items-center min-h-[90vh]">
                 <div className="formcontainer w-[400px] h-[560px] rounded-xl">
                 <h1 className="text-center text-[25px] font-small text-gray-800 font-medium">ADD YOUR DETAILS</h1>
-                <form className="form flex flex-col gap-[10px]">
+                <form onSubmit={handleSubmit} className="form flex flex-col gap-[10px]">
                     <label htmlFor="image">Add Room Image</label>
                     <input type="file" id='image' className="inputimage border rounded" value={image} onChange={handleImage}></input>
                     <label htmlFor='price'>Price : </label>
