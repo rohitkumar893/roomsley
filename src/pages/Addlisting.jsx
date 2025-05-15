@@ -33,7 +33,7 @@ const Addlisting = () => {
 
     const handleSubmit = async () => {
         try {
-            const f = await fetch("http://localhost:3010", {
+            const f = await fetch("http://localhost:3040", {
             method:'POST',            
             headers:{
                 "Content-Type":"application/json"
