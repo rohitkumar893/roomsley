@@ -32,6 +32,11 @@
     animation-fill-mode: forwards;
 }
 
+input{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
 @keyframes slideIn{
     from{
         transform:translateY(-50px);
