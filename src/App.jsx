@@ -69,7 +69,7 @@ function App() {
 
           <div className='marginctrl flex flex-col md:flex-row h-full w-full justify-between gap-[30px]'>
               <div className=''>
-                  <h1 className='textlogo text-[60px] md:text-[90px] font-extrabold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
+                  <h1 className='textlogo text-[60px] md:text-[90px] font-bold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
                   <Link to="/listings">
                   <buttonn className="buttonn w-[160px]">
                   <img src='roomicon.png' className='h-[34px]'></img>
