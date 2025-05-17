@@ -127,7 +127,7 @@ function App() {
         </div>
       </div>
 
-      <div className='footer absolute bottom-0 h-[35px] w-full flex justify-center items-center text-gray-600 font-medium' style={{ backgroundColor:"white" }}>
+      <div className='footer h-[35px] w-full flex justify-center items-center text-gray-600 font-medium' style={{ backgroundColor:"white" }}>
           <h5>Roomsley · 2025</h5>
       </div>
     </>
