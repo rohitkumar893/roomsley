@@ -21,7 +21,7 @@ function App() {
 
     gsap.from(".findrooms",{
       opacity:0,
-      x:-50,
+      x:40,
       duration: 1,
       scrollTrigger:{
         trigger:".findrooms",
@@ -30,7 +30,7 @@ function App() {
     })
 
     gsap.from(".listrooms",{
-      x:50,
+      x:-40,
       opacity:0,
       duration: 1,
       scrollTrigger:{
@@ -40,7 +40,7 @@ function App() {
     })
 
     gsap.from(".easydeal",{
-      x:-50,
+      x:40,
       opacity:0,
       duration: 1,
       scrollTrigger:{
