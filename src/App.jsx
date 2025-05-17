@@ -58,7 +58,7 @@ function App() {
         <h1 className='text-white cursor-pointer' onClick={() => window.location.reload()}>Roomsley</h1>
         </nav>
 
-        <nav className='h-[130px] flex justify-center items-center gap-[28px] md:gap-[60px]'>
+        <nav className='not-first:h-[130px] flex justify-center items-center gap-[28px] md:gap-[60px]'>
             <ul><h2 className='homebtn text-[20px] hover:scale-110 text-gray-800 font-medium' onClick={() => window.location.reload()}>Home</h2></ul>
             <ul><Link to="/login"><h2 className='text-[20px] hover:scale-110 text-gray-800 font-medium'>Log in</h2></Link></ul>
             <ul><Link to='/signup'><h2 className='text-[20px] hover:scale-110 text-gray-800 font-medium'>Sign up</h2></Link></ul>
@@ -69,7 +69,7 @@ function App() {
 
           <div className='marginctrl flex flex-col md:flex-row h-full w-full justify-between gap-[30px]'>
               <div className=''>
-                  <h1 className='textlogo text-[60px] md:text-[90px] font-semibold leading-tight'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
+                  <h1 className='textlogo text-[60px] md:text-[90px] font-extrabold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
                   <Link to="/listings">
                   <buttonn className="buttonn w-[160px]">
                   <img src='roomicon.png' className='h-[34px]'></img>
