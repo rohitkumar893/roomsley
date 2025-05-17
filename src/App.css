@@ -176,6 +176,7 @@ ul:hover{
   animation: greentopBubbles 0.6s ease;
 }
 
+
 @keyframes greentopBubbles {
   0% {
     background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
@@ -281,4 +282,8 @@ ul:hover{
   .roomimg {
     transform: translateY(80px);
   }
+
+  .footer {
+  margin-top:180px;
+}
 }
