@@ -67,7 +67,7 @@ function App() {
         <div className='landingcontainer h-[100%] w-[100%] flex flex-col sm:flex-row justify-center items-center'>
           <div className='padder h-[100%] w-[100%]'>
             <div className='marginctrl flex flex-col md:flex-row h-full w-full justify-between sm:gap-[30px] gap-[40px]'>
-              <div className='flex flex-col gap-[25px]'>
+              <div className='flex flex-col gap-[30px]'>
                   <h1 className='textlogo text-[50px] w-[300px] md:text-[60px] font-bold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
                   <h2 className='text-[18px] sm:w-[410px] w-[360px] font-medium text-justify'> Whether you're finding a place or offering one, Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
