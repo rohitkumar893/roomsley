@@ -59,9 +59,9 @@ function App() {
         </nav>
 
         <nav className='h-[105px] flex justify-center items-center gap-[28px] md:gap-[60px]'>
-            <ul><h2 className='homebtn text-[22px] hover:scale-110 text-gray-800 font-medium' onClick={() => window.location.reload()}>Home</h2></ul>
-            <ul><Link to="/login"><h2 className='text-[22px] hover:scale-110 text-gray-800 font-medium'>Log in</h2></Link></ul>
-            <ul><Link to='/signup'><h2 className='text-[22px] hover:scale-110 text-gray-800 font-medium'>Sign up</h2></Link></ul>
+            <ul><h2 className='homebtn text-[20px] hover:scale-110 text-gray-800 font-medium' onClick={() => window.location.reload()}>Home</h2></ul>
+            <ul><Link to="/login"><h2 className='text-[20px] hover:scale-110 text-gray-800 font-medium'>Log in</h2></Link></ul>
+            <ul><Link to='/signup'><h2 className='text-[20px] hover:scale-110 text-gray-800 font-medium'>Sign up</h2></Link></ul>
           </nav>
 
         <div className='landingcontainer h-[100%] w-[100%] flex flex-col sm:flex-row justify-center items-center'>
