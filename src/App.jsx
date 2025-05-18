@@ -71,9 +71,9 @@ function App() {
               <div className=''>
                   <h1 className='textlogo text-[60px] md:text-[90px] font-bold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
                   <Link to="/listings">
-                  <buttonn className="buttonn w-[160px]">
+                  <buttonn className="buttonn w-[180px]">
                   <img src='roomicon.png' className='h-[34px]'></img>
-                  <h1 className='text-[25px]'>ROOMS</h1>
+                  <h1 className='text-[25px] font-semibold'>EXPLORE</h1>
                   </buttonn>
                   </Link>
               </div>
