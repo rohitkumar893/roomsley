@@ -52,13 +52,13 @@ function App() {
 
   return (
     <>
-      <div className="first h-[100%] 2-[100%]">
+      <div className="first w-[100%]">
       <nav className="h-[68px] w-full flex justify-start items-center gap-[8px] bg-gray-800 text-[22px]">
         <img src='door.png' className='homeicon h-[35px]'></img>
         <h1 className='text-white cursor-pointer' onClick={() => window.location.reload()}>Roomsley</h1>
         </nav>
 
-        <nav className='not-first:h-[130px] flex justify-center items-center gap-[28px] md:gap-[60px]'>
+        <nav className='h-[105px] flex justify-center items-center gap-[28px] md:gap-[60px]'>
             <ul><h2 className='homebtn text-[20px] hover:scale-110 text-gray-800 font-medium' onClick={() => window.location.reload()}>Home</h2></ul>
             <ul><Link to="/login"><h2 className='text-[20px] hover:scale-110 text-gray-800 font-medium'>Log in</h2></Link></ul>
             <ul><Link to='/signup'><h2 className='text-[20px] hover:scale-110 text-gray-800 font-medium'>Sign up</h2></Link></ul>
@@ -66,20 +66,20 @@ function App() {
 
         <div className='landingcontainer h-[100%] w-[100%] flex flex-col sm:flex-row justify-center items-center'>
           <div className='padder h-[100%] w-[100%]'>
-
-          <div className='marginctrl flex flex-col md:flex-row h-full w-full justify-between gap-[30px]'>
-              <div className=''>
-                  <h1 className='textlogo text-[60px] md:text-[90px] font-bold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
+            <div className='marginctrl flex flex-col md:flex-row h-full w-full justify-between gap-[30px]'>
+              <div className='flex flex-col gap-[25px]'>
+                  <h1 className='textlogo text-[55px] w-[300px] md:text-[60px] font-bold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
+                  <h2 className='text-[18px] w-[410px] font-normal text-justify'> Discover and list rooms with ease. Whether you're finding a place or offering one, Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
-                  <buttonn className="buttonn w-[180px]">
+                  <button className="buttonn w-[180px]">
                   <img src='roomicon.png' className='h-[34px]'></img>
                   <h1 className='text-[25px] font-semibold'>EXPLORE</h1>
-                  </buttonn>
+                  </button>
                   </Link>
               </div>
 
               <div>
-                <img src='roomimg.jpg' className='roomimg object-cover h-[580px] sm:h-[600px] w-[600px] z-[-1] relative top-[0px] rounded-sm shadow-md'></img>
+                <img src='roomimg.jpg' className='roomimg h-[580px] w-[580px] sm:h-[600px] sm:w-[600px] rounded-sm shadow-md'></img>
               </div>
              </div>
           </div>

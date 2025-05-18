@@ -20,9 +20,6 @@ nav{
   animation-fill-mode: forwards;
 }
 
-.first{
-  height: 100vh;
-}
 
 .second{
   padding: 80px;
@@ -35,12 +32,12 @@ nav{
 }
 
 .services{
-  margin-top: 225px;
+  margin-top: 180px;
 }
 
 .padder{
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 180px;
+  padding-right: 180px;
 }
 
 .textlogo{
@@ -74,7 +71,7 @@ nav{
   animation-fill-mode: forwards;
 }
 
-.container2{
+/* .container2{
   margin-top:60px;
   width: 100%;
   display: flex;
@@ -87,7 +84,7 @@ nav{
   animation-duration: 2s;
   animation-delay: 0.3s;
   animation-fill-mode: forwards;
-}
+} */
 
 .explore{
   opacity:0;
@@ -195,7 +192,7 @@ ul:hover{
   }
 }
 
-.buttonn:hover::after {
+.button:hover::after {
   bottom: -70%;
   background-image: radial-gradient(circle, rgba(62, 69, 75, 0.902) 20%, transparent 20%),
     radial-gradient(circle, rgba(62, 69, 75, 0.902) 20%, transparent 20%),
@@ -242,10 +239,6 @@ ul:hover{
 
 
 @media(max-width:1500px){
-  .services{
-    margin-top: 200px;
-  }
-
   .padder{
     padding-left: 100px;
     padding-right: 100px;
@@ -254,36 +247,16 @@ ul:hover{
 }
 
 @media(max-width:700px){
+  .roomimg{
+    
+  }
+
   .services{
-    margin-top:260px;
+    margin-top:360px;
   }
   .padder{
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  .roomimg {
-    transform: translateY(-180px);
-  }
-}
-
-@media(max-width:580px){
-  .roomimg {
-    transform: translateY(30px);
-  }
-}
-
-
-@media(max-width:780px){
-  .second {
-    transform: translateY(160px);
-  }
-
-  .roomimg {
-    transform: translateY(80px);
-  }
-
-  .footer {
-  margin-top:180px;
-}
 }
