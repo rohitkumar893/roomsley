@@ -247,12 +247,8 @@ ul:hover{
 }
 
 @media(max-width:700px){
-  .roomimg{
-    
-  }
-
   .services{
-    margin-top:360px;
+    margin-top:120px;
   }
   .padder{
     padding-left: 40px;
