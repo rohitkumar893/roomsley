@@ -69,7 +69,7 @@ function App() {
             <div className='marginctrl flex flex-col md:flex-row h-full w-full justify-between gap-[30px]'>
               <div className='flex flex-col gap-[25px]'>
                   <h1 className='textlogo text-[55px] w-[300px] md:text-[60px] font-bold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
-                  <h2 className='text-[18px] w-[410px] font-normal text-justify'> Discover and list rooms with ease. Whether you're finding a place or offering one, Roomsley makes it simple and quick.</h2>
+                  <h2 className='text-[18px] sm:w-[410px] w-[320px] font-normal text-justify'> Discover and list rooms with ease. Whether you're finding a place or offering one, Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
                   <button className="buttonn w-[180px]">
                   <img src='roomicon.png' className='h-[34px]'></img>
