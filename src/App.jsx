@@ -59,9 +59,9 @@ function App() {
         </nav>
 
         <nav className='h-[105px] flex justify-center items-center gap-[28px] md:gap-[60px]'>
-            <ul><h2 className='homebtn text-[20px] hover:scale-110 text-gray-800 font-medium' onClick={() => window.location.reload()}>Home</h2></ul>
-            <ul><Link to="/login"><h2 className='text-[20px] hover:scale-110 text-gray-800 font-medium'>Log in</h2></Link></ul>
-            <ul><Link to='/signup'><h2 className='text-[20px] hover:scale-110 text-gray-800 font-medium'>Sign up</h2></Link></ul>
+            <ul><h2 className='homebtn text-[20px] hover:scale-110 text-gray-800 font-bold' onClick={() => window.location.reload()}>Home</h2></ul>
+            <ul><Link to="/login"><h2 className='text-[20px] hover:scale-110 text-gray-800 font-bold'>Log in</h2></Link></ul>
+            <ul><Link to='/signup'><h2 className='text-[20px] hover:scale-110 text-gray-800 font-bold'>Sign up</h2></Link></ul>
           </nav>
 
         <div className='landingcontainer h-[100%] w-[100%] flex flex-col sm:flex-row justify-center items-center'>
@@ -69,7 +69,7 @@ function App() {
             <div className='marginctrl flex flex-col md:flex-row h-full w-full justify-between gap-[45px]'>
               <div className='flex flex-col gap-[30px]'>
                   <h1 className='textlogo text-[50px] w-[300px] md:text-[60px] font-bold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
-                  <h2 className='text-[18px] sm:w-[410px] w-[360px] font-medium text-justify'> Whether you're finding a place or offering one, Roomsley makes it simple and quick.</h2>
+                  <h2 className='text-[18px] sm:w-[410px] w-[360px] font-medium'> Whether you're finding a place or offering one, Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
                   <button className="buttonn w-[180px]">
                   <img src='roomicon.png' className='h-[34px]'></img>
