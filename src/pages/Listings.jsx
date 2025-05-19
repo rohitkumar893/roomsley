@@ -31,9 +31,8 @@ const Listings = () => {
     }
 
 const handleSubmit = (e) => {
-  e.preventDefault(); // ⛔ Stops form from refreshing the page
+  e.preventDefault();
   console.log({ image, price, name, contact, location });
-  // You can also reset form here if needed
   setModal(false);
 };
 
@@ -85,14 +84,14 @@ const handleSubmit = (e) => {
     <div className="container3">
         <div class="div1">
         </div>
-        <div class="div1"></div>
-        <div class="div1"></div>
-        <div class="div1"></div>
-        <div class="div1"></div>
-        <div class="div1"></div>
-        <div class="div1"></div>
-        <div class="div1"></div>
-        <div class="div1"></div>
+        <div className="div1"></div>
+        <div className="div1"></div>
+        <div className="div1"></div>
+        <div className="div1"></div>
+        <div className="div1"></div>
+        <div className="div1"></div>
+        <div className="div1"></div>
+        <div className="div1"></div>
     </div>
     </>
   )
