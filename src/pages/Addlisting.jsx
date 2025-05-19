@@ -5,18 +5,18 @@ import Listings from "./Listings";
 
 const Addlisting = () => {
 
-    const[image, setImage] = useState("");
+    const[image, setImage] = useState(null);
     const[price, setPrice] = useState("");
     const[name, setName] = useState("");
     const[contact, setContact] = useState("");
     const[location, setLocation] = useState("");
 
     const handleImage = (e) => {
-        setImage(e.target.value)
+        setImage(e.target.files[0])
     }
 
     const handlePrice = (e) => {
-        setPrice(e.target.value)
+        setPrice(Number(e.target.value))
     }
 
     const handleName = (e) => {
@@ -24,22 +24,29 @@ const Addlisting = () => {
     }
 
     const handleContact = (e) => {
-        setContact(e.target.value)
+        setContact(Number(e.target.value))
     }
 
     const handleLocation = (e) => {
         setLocation(e.target.value)
     }
 
-    const handleSubmit = async () => {
+    const formData = {
+        image: image ? image.name : "",
+        price,
+        name,
+        contact,
+        location
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
         try {
             const f = await fetch("http://localhost:3040", {
             method:'POST',            
             headers:{
                 "Content-Type":"application/json"
             },
-
-            body: JSON.stringify(formData)
             })
         }
         
@@ -61,16 +68,16 @@ const Addlisting = () => {
                 <h1 className="text-center text-[25px] font-small text-gray-800 font-medium">ADD YOUR DETAILS</h1>
                 <form onSubmit={handleSubmit} className="form flex flex-col gap-[10px]">
                     <label htmlFor="image">Add Room Image</label>
-                    <input type="file" id='image' className="inputimage border rounded" value={image} onChange={handleImage}></input>
+                    <input type="file" id='image' className="inputimage border rounded" onChange={handleImage}></input>
                     <label htmlFor='price'>Price : </label>
                     <input type='number' id='price' className="border rounded" value={price} onChange={handlePrice}></input>
                     <label htmlFor='name'>Name : </label>
-                    <input type='text' id='name' className="border rounded" value={name} onChange={handleName}></input>
+                    <input type='text' id='name' className="border rounded" placeholder="Enter your name" value={name} onChange={handleName}></input>
                     <label htmlFor='contact'>Contact Number : </label>
                     <input type='number' id='contact' className="border rounded" value={contact} onChange={handleContact}></input>
                     <label htmlFor='location'>Location : </label>
                     <input type='text' id='location' className="border rounded" value={location} onChange={handleLocation}></input>
-                    <button className="text-[20px] text-blue-600 font-medium" style={{marginTop:'10px'}}>SUBMIT</button>
+                    <button type="submit" className="text-[20px] text-blue-600 font-medium" style={{marginTop:'10px'}}>SUBMIT</button>
                     </form>
                 </div>
             </div>

@@ -30,6 +30,13 @@ const Listings = () => {
         setLocation(e.target.value)
     }
 
+const handleSubmit = (e) => {
+  e.preventDefault(); // ⛔ Stops form from refreshing the page
+  console.log({ image, price, name, contact, location });
+  // You can also reset form here if needed
+  setModal(false);
+};
+
   const[modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -53,12 +60,12 @@ const Listings = () => {
     {/* </Link> */}
     </div>
 
-    {modal && (<div className="modal" onClick={toggleModal}>
+    {modal && (<div className="modal">
         <div className="overlay" onClick={toggleModal}></div>
-        <div className="contentmodal flex justify-center items-center min-h-[96vh]">
+        <div className="contentmodal flex justify-center items-center min-h-[96vh]" onClick={(e) => e.stopPropagation()}>
         <div className="formcontainer sm:w-[400px] sm:h-[560px] w-[320px] h-[580px] rounded-xl">
                 <h1 className="text-center text-[25px] font-small text-gray-800 font-medium">ADD YOUR DETAILS</h1>
-                <form className="form flex flex-col gap-[10px]">
+                <form className="form flex flex-col gap-[10px]" onSubmit={handleSubmit}>
                     <label htmlFor="image">Add Room Image</label>
                     <input type="file" id='image' className="inputimage border rounded" onChange={handleImage}></input>
                     <label htmlFor='price'>Price : </label>
@@ -75,7 +82,7 @@ const Listings = () => {
         </div>
       </div>)}
     
-    <div class="container3">
+    <div className="container3">
         <div class="div1">
         </div>
         <div class="div1"></div>
