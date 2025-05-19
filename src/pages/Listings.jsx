@@ -72,7 +72,7 @@ const handleSubmit = (e) => {
                     <label htmlFor='name'>Name : </label>
                     <input type='text' id='name' className="border rounded" value={name} onChange={handleName}></input>
                     <label htmlFor='contact'>Contact Number : </label>
-                    <input type='number' id='contact' className="border rounded" value={contact} onChange={handleContact}></input>
+                    <input type='tel' id='contact' className="border rounded" value={contact} onChange={handleContact}></input>
                     <label htmlFor='location'>Location : </label>
                     <input type='text' id='location' className="border rounded" value={location} onChange={handleLocation}></input>
                     <button className="text-[20px] text-blue-600 font-medium" style={{marginTop:'10px'}}>SUBMIT</button>
