@@ -79,7 +79,7 @@ function App() {
               </div>
 
               <div>
-                <img src='roomimg.jpg' className='roomimg h-[580px] w-[580px] sm:h-[600px] sm:w-[600px] rounded-sm shadow-md'></img>
+                <img src='roomimg.jpg' className='roomimg h-[580px] w-[580px] sm:h-[600px] sm:w-[600px] rounded-md'></img>
               </div>
              </div>
           </div>

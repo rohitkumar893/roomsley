@@ -41,7 +41,7 @@ nav{
 }
 
 .textlogo{
-  text-shadow: white 2px 2px 3px;
+  text-shadow: white 2px 2px 4px;
 }
 
 .logoimg{
@@ -171,6 +171,10 @@ ul:hover{
     10% 10%, 18% 18%;
   background-position: 50% 120%;
   animation: greentopBubbles 0.6s ease;
+}
+
+.roomimg{
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.658);
 }
 
 
