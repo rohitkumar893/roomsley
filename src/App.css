@@ -32,7 +32,7 @@ nav{
 }
 
 .services{
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .padder{
@@ -250,7 +250,7 @@ ul:hover{
   
 }
 
-@media(max-width:700px){
+@media(max-width:780px){
   .rooming{
     margin-top: 40px;
   }
