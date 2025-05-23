@@ -119,9 +119,9 @@ const handleSubmit = async (e) => {
           <div className='demoroomdetails h-[35%] flex flex-col justify-center gap-[8px] bg-gray-50 rounded-b-xl'>
             <h1><span className='font-semibold text-center'>'DEMO ROOM'</span></h1>
             <h1><span className='font-semibold'>Rent/month :&nbsp;</span>10,000</h1>
-            <h1><span className='font-semibold'>Name :&nbsp;</span>Rohit</h1>
+            <h1><span className='font-semibold'>Name :&nbsp;</span>Rohit Kumar</h1>
             <h1><span className='font-semibold'>Contact :&nbsp;</span>9876598765</h1>
-            <h1><span className='font-semibold'>Location :&nbsp;</span>Mohali</h1>
+            <h1><span className='font-semibold'>Location :&nbsp;</span>Mohali, Punjab</h1>
           </div>
         </div>
 
