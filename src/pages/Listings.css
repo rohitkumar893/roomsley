@@ -98,8 +98,8 @@ ul:hover{
 
 @media(max-width:780px){
     .container3{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 14px;
+    padding-right: 14px;
     grid-template-rows: none;
     grid-template-columns: 1fr;
     }
