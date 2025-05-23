@@ -94,10 +94,10 @@ const handleSubmit = async (e) => {
     {modal && (<div className="modal">
         <div className="overlay" onClick={toggleModal}></div>
         <div className="contentmodal flex justify-center items-center min-h-[96vh]" onClick={(e) => e.stopPropagation()}>
-        <div className="formcontainer sm:w-[400px] sm:h-[560px] w-[320px] h-[580px] rounded-xl">
-                <h1 className="text-center text-[25px] font-small text-gray-800 font-medium">ADD YOUR DETAILS</h1>
+        <div className="formcontainer sm:w-[400px] sm:h-[560px] w-[320px] h-[590px] rounded-xl">
+                <h1 className="text-center text-[22px] font-small text-gray-800 font-medium">ADD YOUR DETAILS</h1>
                 <form className="form flex flex-col gap-[10px]" onSubmit={handleSubmit}>
-                    <label htmlFor="image">Add Room Image</label>
+                    <label htmlFor="image">Add Room Image : </label>
                     <input type="file" id='image' className="inputimage border rounded" onChange={handleImage}></input>
                     <label htmlFor='price'>Price : </label>
                     <input type='number' id='price' className="border rounded" value={price} onChange={handlePrice}></input>
@@ -114,6 +114,16 @@ const handleSubmit = async (e) => {
       </div>)}
     
     <div className="container3">
+        {/* <div className="demoroom">
+          <div><img src="" /></div>
+          <div>
+            <h1>Price : </h1>
+            <h1>Name : </h1>
+            <h1>Contact No : </h1>
+            <h1>Location</h1>
+          </div>
+        </div> */}
+
         <div className="div1">
         </div>
     </div>
