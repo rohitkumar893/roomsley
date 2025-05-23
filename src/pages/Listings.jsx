@@ -117,10 +117,10 @@ const handleSubmit = async (e) => {
         <div className="demoroom h-[500px] w-[350px] sm:h-[550px] sm:w-[400px] rounded-xl overflow-clip">
           <div className='h-[65%] overflow-clip'><img src="/demoroom.jpg" className='demoroom rounded-t-xl object-cover'/></div>
           <div className='demoroomdetails h-[35%] flex flex-col justify-center gap-[8px] bg-gray-50 rounded-b-xl'>
-            <h1><span className='font-semibold text-center'>'DEMO ROOM'</span></h1>
+            <h1><span className='font-semibold text-center flex justify-center text-[20px]'>'DEMO ROOM'</span></h1>
             <h1><span className='font-semibold'>Rent/month :&nbsp;</span>10,000</h1>
             <h1><span className='font-semibold'>Name :&nbsp;</span>Rohit Kumar</h1>
-            <h1><span className='font-semibold'>Contact :&nbsp;</span>9876598765</h1>
+            <h1><span className='font-semibold'>Contact :&nbsp;</span>98765-98765</h1>
             <h1><span className='font-semibold'>Location :&nbsp;</span>Mohali, Punjab</h1>
           </div>
         </div>
