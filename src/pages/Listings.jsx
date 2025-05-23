@@ -114,9 +114,9 @@ const handleSubmit = async (e) => {
       </div>)}
     
     <div className="container3">
-        <div className="demoroom h-[500px] w-[320px] sm:h-[500px] sm:w-[400px] border rounded-xl">
-          <div className='h-[65%]'><img src="/demoroom.jpg" className='rounded-xl'/></div>
-          <div className='demoroomdetails h-[35%] flex flex-col justify-center gap-[4px] bg-gray-50 rounded-xl'>
+        <div className="demoroom h-[450px] w-[350px] sm:h-[500px] sm:w-[400px] border rounded-xl overflow-clip">
+          <div className='h-[65%] overflow-clip'><img src="/demoroom.jpg" className='demoroom rounded-t-xl object-cover'/></div>
+          <div className='demoroomdetails h-[35%] flex flex-col justify-center gap-[4px] bg-gray-50 rounded-b-xl'>
             <h1><span className='font-semibold text-center'>'DEMO ROOM'</span></h1>
             <h1><span className='font-semibold'>Rent/month :&nbsp;</span>10,000</h1>
             <h1><span className='font-semibold'>Name :&nbsp;</span>Rohit</h1>
