@@ -30,11 +30,44 @@ const Listings = () => {
         setLocation(e.target.value)
     }
 
-const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
   e.preventDefault();
-  console.log({ image, price, name, contact, location });
-  setModal(false);
+
+  try{
+    const formData = new FormData();
+      formData.append("image", image);
+      formData.append("price", price);
+      formData.append("name", name);
+      formData.append("contact", contact);
+      formData.append("location", location);
+
+    console.log({ image, price, name, contact, location });
+
+    const response = await fetch("http://localhost:3040/api/auth/listings", {
+      method:"POST",
+      body:formData,
+  })
+
+    const result = await response.json();
+      console.log("✅ Data sent to backend successfully:", result);
+
+      resetForm();
+
+      setModal(false);
+  }
+
+  catch (error) {
+    console.error("❌ Error sending data:", error);
+  }
 };
+
+      const resetForm = () => {
+        setImage("");
+        setPrice("");
+        setName("");
+        setContact("");
+        setLocation("");
+      };
 
   const[modal, setModal] = useState(false);
 
@@ -82,16 +115,8 @@ const handleSubmit = (e) => {
       </div>)}
     
     <div className="container3">
-        <div class="div1">
+        <div className="div1">
         </div>
-        <div className="div1"></div>
-        <div className="div1"></div>
-        <div className="div1"></div>
-        <div className="div1"></div>
-        <div className="div1"></div>
-        <div className="div1"></div>
-        <div className="div1"></div>
-        <div className="div1"></div>
     </div>
     </>
   )
