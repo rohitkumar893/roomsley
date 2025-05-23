@@ -6,6 +6,10 @@
     background-attachment: fixed;
 } */
 
+body{
+    overflow-x: hidden;
+}
+
 .container3{
     margin-top:50px;
     padding-bottom:80px;
