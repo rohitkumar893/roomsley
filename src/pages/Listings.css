@@ -6,10 +6,6 @@
     background-attachment: fixed;
 } */
 
-body{
-    overflow-x: hidden;
-}
-
 .container3{
     margin-top:50px;
     padding-bottom:80px;
@@ -102,8 +98,8 @@ ul:hover{
 
 @media(max-width:780px){
     .container3{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     grid-template-rows: none;
     grid-template-columns: 1fr;
     }
@@ -114,8 +110,8 @@ ul:hover{
         display: grid;
         place-items: center;
         grid-template-columns: 1fr 1fr;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
