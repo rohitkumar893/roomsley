@@ -94,7 +94,7 @@ function App() {
 
           <div className='flex flex-col gap-[35px]'>
             <h1 className='smry1 text-[28px] text-gray-800 font-medium'>FIND ROOMS</h1>
-            <p className='text-[18px]'>We help you explore a wide range of verified rental options tailored to your needs-whether you're a student, working professional, or just moving to a new city.
+            <p className='sm:text-[18px] text-[15px]'>We help you explore a wide range of verified rental options tailored to your needs-whether you're a student, working professional, or just moving to a new city.
 
             Filter by location, budget, amenities, and more to discover the perfect space that feels like home. Say goodbye to endless searching and shady listings-every room listed is pre-checked to ensure safety, affordability, and comfort.
 
@@ -106,7 +106,7 @@ function App() {
           <img src='dispimg2.jpg' className='sm:h-[235px] sm:w-[235px] h-full w-full rounded-[15px]'></img>
           <div className='flex flex-col gap-[35px]'>
             <h1 className='smry2 text-[28px] text-gray-800 font-medium'>LIST YOUR ROOM</h1>
-            <p className='text-[18px]'>Got a spare room or property? Turn it into easy income by listing it on our platform. With our List Your Room service, you can connect directly with people looking for a place-no middlemen, no broker fees.
+            <p className='sm:text-[18px] text-[15px]'>Got a spare room or property? Turn it into easy income by listing it on our platform. With our List Your Room service, you can connect directly with people looking for a place-no middlemen, no broker fees.
 
               Creating a listing is super simple: add photos, set your price, write a short description, and you're good to go. We help your space get seen by genuine tenants so you can rent it out faster and safer.
 
@@ -118,7 +118,7 @@ function App() {
           <img src='dispimg3.jpg' className='sm:h-[235px] sm:w-[235px] h-full w-full rounded-[15px]'></img>
           <div className='flex flex-col gap-[35px]'>
             <h1 className='smry3 text-[28px] text-gray-800 font-medium'>EASY DEAL</h1>
-            <p className='text-[18px]'>Renting shouldn’t be a headache, and with our Easy Deal service, it’s not. We simplify the whole renting process by helping both tenants and owners with quick, clear, and secure rental agreements.
+            <p className='sm:text-[18px] text-[15px]'>Renting shouldn’t be a headache, and with our Easy Deal service, it’s not. We simplify the whole renting process by helping both tenants and owners with quick, clear, and secure rental agreements.
 
               No legal confusion, no paperwork mess-just a smooth digital process that saves you time and keeps everything official. From rent terms to move-in dates, everything’s handled in a transparent and hassle-free way.
 
