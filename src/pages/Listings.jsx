@@ -81,7 +81,7 @@ const handleSubmit = async (e) => {
         <Link to='/'><h1 className='text-white'>Roomsley</h1></Link>
         </nav>
 
-    <div className='listings w-full h-[140px] flex justify-center items-center text-[32px]'>
+    <div className='listings w-full h-[110px] flex justify-center items-center text-[32px]'>
         <h1 className='text-gray-800 font-semibold'>ROOMS</h1>
     </div>
 
@@ -114,15 +114,15 @@ const handleSubmit = async (e) => {
       </div>)}
     
     <div className="container3">
-        {/* <div className="demoroom">
-          <div><img src="" /></div>
-          <div>
-            <h1>Price : </h1>
-            <h1>Name : </h1>
-            <h1>Contact No : </h1>
-            <h1>Location</h1>
+        <div className="demoroom h-[500px] w-[400px] border rounded-xl">
+          <div className='h-[65%]'><img src="/demoroom.jpg" className='rounded-xl'/></div>
+          <div className='demoroomdetails h-[35%] flex flex-col justify-center gap-[15px] bg-gray-50 rounded-xl'>
+            <h1><span className='font-semibold'>Rent/month :&nbsp;</span>10,000</h1>
+            <h1><span className='font-semibold'>Name :&nbsp;</span>Demo Room</h1>
+            <h1><span className='font-semibold'>Contact :&nbsp;</span>9876598765</h1>
+            <h1><span className='font-semibold'>Location :&nbsp;</span>Demo Room</h1>
           </div>
-        </div> */}
+        </div>
 
         <div className="div1">
         </div>
