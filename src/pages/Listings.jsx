@@ -114,7 +114,7 @@ const handleSubmit = async (e) => {
       </div>)}
     
     <div className="container3">
-        <div className="demoroom h-[500px] w-[400px] border rounded-xl">
+        <div className="demoroom h-[400px] w-[300px] sm:h-[500px] sm:w-[400px] border rounded-xl">
           <div className='h-[65%]'><img src="/demoroom.jpg" className='rounded-xl'/></div>
           <div className='demoroomdetails h-[35%] flex flex-col justify-center gap-[6px] bg-gray-50 rounded-xl'>
             <h1><span className='font-semibold text-center'>'DEMO ROOM'</span></h1>
