@@ -229,7 +229,7 @@ ul:hover{
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media(max-width:1200px){
   .second{
     padding: 30px;
     padding-top:60px;
@@ -237,22 +237,21 @@ ul:hover{
   }
 
   .services{
-    margin-top: 180px;
-  }
-
-  .padder{
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-top: 100px;
   }
 }
+
 
 @media(max-width:1500px){
-  .padder{
-    padding-left: 80px;
-    padding-right: 80px;
+  .roomimg{
+    height: 400px;
   }
+  .padder{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
 }
-
 
 @media(max-width:780px){
   .roomimg{
@@ -266,4 +265,5 @@ ul:hover{
     padding-left: 40px;
     padding-right: 40px;
   }
+
 }
