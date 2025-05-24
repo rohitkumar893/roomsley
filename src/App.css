@@ -243,6 +243,9 @@ ul:hover{
 
 
 @media(max-width:1500px){
+  .roomimg{
+    height: 400px;
+  }
   .padder{
     padding-left: 100px;
     padding-right: 100px;
