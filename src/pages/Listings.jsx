@@ -125,8 +125,24 @@ const handleSubmit = async (e) => {
           </div>
         </div>
 
-        <div className="div1">
-        </div>
+        {listings.map((listing, index) => (
+            <div key={index} className="roomdiv w-[350px] rounded-xl overflow-clip">
+              <div className='h-[65%] overflow-clip'>
+                <img 
+                  src={`http://localhost:3040/uploads/${listing.image}`} 
+                  alt="room" 
+                  className='roomdiv rounded-t-xl object-cover w-full h-full'
+                />
+              </div>
+              <div className='roomdiv bg-gray-50 rounded-b-xl p-4'>
+                <h1 className='text-center font-semibold text-[20px]'>{listing.name}</h1>
+                <p><strong>Rent/month : </strong> ₹{listing.price}</p>
+                <p><strong>Name : </strong> ₹{listing.name}</p>
+                <p><strong>Contact : </strong> {listing.contact}</p>
+                <p><strong>Location : </strong> {listing.location}</p>
+              </div>
+            </div>
+          ))}
     </div>
     </>
   )
