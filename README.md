@@ -1,8 +1,15 @@
-# React + Vite
+A simple MERN stack app to list and browse rooms for rent.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+CRUD for room listings with image upload.
 
-Currently, two official plugins are available:
+List your room by adding details and image.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Find rooms from explore section.
+
+Responsive React frontend + Express API backend.
+
+MongoDB database.
+
+Tech
+React, Tailwind, Node.js, Express, MongoDB
