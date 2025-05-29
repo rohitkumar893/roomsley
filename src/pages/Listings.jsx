@@ -8,6 +8,7 @@ const Listings = () => {
     const[name, setName] = useState("");
     const[contact, setContact] = useState("");
     const[location, setLocation] = useState("");
+    const [listings, setListings] = useState([]);
 
     const handleImage = (e) => {
       setImage(e.target.files[0]);
