@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Listings.css'
 import { Link } from 'react-router-dom'
 
@@ -75,8 +75,12 @@ const handleSubmit = async (e) => {
     setModal (!modal);
   }
 
-      useEffect(() => {
-      const fetchListings = async () => {
+    useEffect(() => {
+      fetchListings();
+    }, []);
+
+    
+    const fetchListings = async () => {
         try {
           const response = await fetch("http://localhost:3040/api/auth/getlistings", {
             method: "POST",
@@ -86,14 +90,11 @@ const handleSubmit = async (e) => {
           });
 
           const data = await response.json();
-          setListings(data); // 👈 This updates your state with the fetched listings
+          setListings(data);
         } catch (error) {
           console.error("❌ Error fetching listings:", error);
         }
       };
-
-      fetchListings();
-    }, []);
 
   return (
     <>
@@ -133,35 +134,23 @@ const handleSubmit = async (e) => {
       </div>)}
     
     <div className="container3">
-        <div className="demoroom h-[600px] w-[350px] sm:h-[650px] sm:w-[400px] rounded-xl overflow-clip">
-          <div className='h-[65%] overflow-clip'><img src="/demoroom.jpg" className='demoroom rounded-t-xl object-cover'/></div>
-          <div className='demoroomdetails h-[35%] flex flex-col justify-center gap-[10px] bg-gray-50 rounded-b-xl'>
-            <h1><span className='font-semibold text-center flex justify-center text-[20px]'>'DEMO ROOM'</span></h1>
-            <h1><span className='font-semibold'>Rent/month :&nbsp;</span>10,000</h1>
-            <h1><span className='font-semibold'>Name :&nbsp;</span>Rohit Kumar</h1>
-            <h1><span className='font-semibold'>Contact :&nbsp;</span>98765-98765</h1>
-            <h1><span className='font-semibold'>Location :&nbsp;</span>Mohali, Punjab</h1>
-          </div>
-        </div>
-
         {listings.map((listing, index) => (
-            <div key={index} className="roomdiv w-[350px] rounded-xl overflow-clip">
-              <div className='h-[65%] overflow-clip'>
-                <img 
-                  src={`http://localhost:3040/uploads/${listing.image}`} 
-                  alt="room" 
-                  className='roomdiv rounded-t-xl object-cover w-full h-full'
-                />
-              </div>
-              <div className='roomdiv bg-gray-50 rounded-b-xl p-4'>
-                <h1 className='text-center font-semibold text-[20px]'>{listing.name}</h1>
-                <p><strong>Rent/month : </strong> ₹{listing.price}</p>
-                <p><strong>Name : </strong> ₹{listing.name}</p>
-                <p><strong>Contact : </strong> {listing.contact}</p>
-                <p><strong>Location : </strong> {listing.location}</p>
-              </div>
+          <div key={index} className="addrooms h-[600px] w-[350px] sm:h-[650px] sm:w-[400px] rounded-xl overflow-clip">
+            <div className='h-[65%] overflow-clip'>
+              <img 
+                src={`http://localhost:3040/uploads/${listing.image}`} 
+                alt="room" 
+                className='addrooms rounded-t-xl object-cover w-full h-full'
+              />
             </div>
-          ))}
+            <div className='addroomdetails h-[35%] flex flex-col justify-center gap-[16px] bg-gray-50 rounded-b-xl'>
+              <h1><span className='font-semibold'>Rent/month :&nbsp;</span>₹{listing.price}</h1>
+              <h1><span className='font-semibold'>Name :&nbsp;</span>{listing.name}</h1>
+              <h1><span className='font-semibold'>Contact :&nbsp;</span>{listing.contact}</h1>
+              <h1><span className='font-semibold'>Location :&nbsp;</span>{listing.location}</h1>
+            </div>
+          </div>
+        ))}
     </div>
     </>
   )

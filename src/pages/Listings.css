@@ -18,6 +18,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 60px;
+    column-gap: 30px;
     opacity: 0;
     animation-name: slideIn;
     animation-duration: 1s;
@@ -54,11 +55,11 @@
     z-index: 10;
 }
 
-.demoroom{
+.addrooms{
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.658);
 }
 
-.demoroomdetails{
+.addroomdetails{
     padding-left: 18px;
     padding-right: 18px;
 }
