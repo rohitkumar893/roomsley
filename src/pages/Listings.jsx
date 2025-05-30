@@ -107,9 +107,7 @@ const handleSubmit = async (e) => {
     </div>
 
     <div className='add w-full h-[60px] flex justify-center items-center'>
-    {/* <Link to='/addlisting'> */}
     <button className='bg-gray-800 w-[180px] h-[50px] text-[22px] rounded-md hover:scale-110 cursor-pointer text-white' onClick={toggleModal}>ADD LISTING +</button>
-    {/* </Link> */}
     </div>
 
     {modal && (<div className="modal">
