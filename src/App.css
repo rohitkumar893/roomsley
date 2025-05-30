@@ -108,7 +108,11 @@ ul:hover{
 .about{
   margin-right: 25px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 19px;
+  background-color: rgb(81, 77, 77);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 6px;
 }
 
 .homebtn{
