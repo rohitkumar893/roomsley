@@ -139,7 +139,7 @@ const handleSubmit = async (e) => {
             <div className='h-[65%] overflow-clip'>
               <img 
                 src={`http://localhost:3040/uploads/${listing.image}`} 
-                alt="room" 
+                alt="Image not availaible" 
                 className='addrooms rounded-t-xl object-cover w-full h-full'
               />
             </div>
