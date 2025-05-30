@@ -14,19 +14,15 @@ const Listings = () => {
     const handleImage = (e) => {
       setImage(e.target.files[0]);
     }
-
     const handlePrice = (e) => {
         setPrice(e.target.value)
     }
-
     const handleName = (e) => {
         setName(e.target.value)
     }
-
     const handleContact = (e) => {
         setContact(e.target.value)
     }
-
     const handleLocation = (e) => {
         setLocation(e.target.value)
     }
@@ -55,6 +51,8 @@ const handleSubmit = async (e) => {
       resetForm();
 
       setModal(false);
+
+       fetchListings();
   }
 
   catch (error) {
