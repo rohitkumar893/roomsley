@@ -53,9 +53,13 @@ function App() {
   return (
     <>
       <div className="first w-[100%]">
-      <nav className="h-[68px] w-full flex justify-start items-center gap-[8px] bg-gray-800 text-[22px]">
-        <img src='door.png' className='homeicon h-[35px]'></img>
-        <h1 className='text-white cursor-pointer' onClick={() => window.location.reload()}>Roomsley</h1>
+      <nav className="h-[68px] w-full flex justify-between items-center bg-gray-800 text-[22px]">
+        <div className='w-full flex justify-start items-center gap-[8px]'>
+          <img src='door.png' className='homeicon h-[35px]'></img>
+          <h1 className='text-white cursor-pointer' onClick={() => window.location.reload()}>Roomsley</h1>
+        </div>
+
+        <Link to='/about' className='about'><h1 className='w-full text-white flex justify-end items-center'>ABOUT</h1></Link>
         </nav>
 
         <nav className='h-[115px] flex justify-center items-center gap-[42px] md:gap-[122px]'>

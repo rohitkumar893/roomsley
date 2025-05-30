@@ -117,7 +117,13 @@ ul:hover{
 }
 
 .homeicon{
-  margin-left: 22px;
+  margin-left: 25px;
+}
+
+.about{
+  margin-right: 25px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .homebtn{
