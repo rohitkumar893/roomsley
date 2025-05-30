@@ -99,9 +99,7 @@ function App() {
           <div className='flex flex-col sm:gap-[35px] gap-[25px]'>
             <h1 className='smry1 text-[28px] text-gray-800 font-medium'>FIND ROOMS</h1>
             <p className='sm:text-[18px] text-[15px]'>We help you explore a wide range of verified rental options tailored to your needs-whether you're a student, working professional, or just moving to a new city.
-
-            Filter by location, budget, amenities, and more to discover the perfect space that feels like home. Say goodbye to endless searching and shady listings-every room listed is pre-checked to ensure safety, affordability, and comfort.
-
+              Filter by location, budget, amenities, and more to discover the perfect space that feels like home. Say goodbye to endless searching and shady listings-every room listed is pre-checked to ensure safety, affordability, and comfort.
               Just pick your vibe, and let us handle the rest.</p>
           </div>
         </div>
@@ -111,9 +109,7 @@ function App() {
           <div className='flex flex-col sm:gap-[35px] gap-[25px]'>
             <h1 className='smry2 text-[28px] text-gray-800 font-medium'>LIST YOUR ROOM</h1>
             <p className='sm:text-[18px] text-[15px]'>Got a spare room or property? Turn it into easy income by listing it on our platform. With our List Your Room service, you can connect directly with people looking for a place-no middlemen, no broker fees.
-
               Creating a listing is super simple: add photos, set your price, write a short description, and you're good to go. We help your space get seen by genuine tenants so you can rent it out faster and safer.
-
               Whether it's a shared room, a studio, or a full apartment-we’ll help you find the right renter, stress-free.</p>
           </div>
         </div>
@@ -123,9 +119,7 @@ function App() {
           <div className='flex flex-col sm:gap-[35px] gap-[25px]'>
             <h1 className='smry3 text-[28px] text-gray-800 font-medium'>EASY DEAL</h1>
             <p className='sm:text-[18px] text-[15px]'>Renting shouldn’t be a headache, and with our Easy Deal service, it’s not. We simplify the whole renting process by helping both tenants and owners with quick, clear, and secure rental agreements.
-
               No legal confusion, no paperwork mess-just a smooth digital process that saves you time and keeps everything official. From rent terms to move-in dates, everything’s handled in a transparent and hassle-free way.
-
               Renting a room or listing one? We make the deal easy, fair, and fast.</p>
           </div>
         </div>
