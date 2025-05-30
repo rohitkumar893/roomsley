@@ -7,6 +7,7 @@ import Login from './pages/Login.jsx'
 import Listings from './pages/Listings.jsx'
 import Signup from './pages/Signup.jsx'
 import About from './pages/About.jsx'
+import { ToastContainer } from 'react-toastify';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>

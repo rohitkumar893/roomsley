@@ -2,6 +2,7 @@ import React from 'react'
 import './Signup.css'
 import {Link, useNavigate} from "react-router-dom"
 import {useState} from 'react' 
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const Signup = () => {
@@ -30,15 +31,21 @@ const Signup = () => {
 
 
       const data = await response.json();
-      alert(data.message);
-      navigate('/login');
-    } catch (error) {
-      console.error("Error:", error);
-    }
-  };
+      if (response.ok) {
+          toast.success(data.message || "Signup successful!");
+          navigate('/login');
+        } else {
+          toast.error(data.message || "Signup failed. Try a different username.");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        toast.error("Something went wrong. Please try again.");
+      }
+    };
 
   return (
     <>
+    <ToastContainer />
     <nav className="h-[68px] w-full flex justify-start items-center gap-[8px] bg-gray-800 text-[22px]">
         <img src='door.png' className='homeicon h-[35px]'></img>
         <Link to='/'><h1 className='text-white'>Roomsley</h1></Link>
