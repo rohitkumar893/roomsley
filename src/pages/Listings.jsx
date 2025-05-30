@@ -75,6 +75,26 @@ const handleSubmit = async (e) => {
     setModal (!modal);
   }
 
+      useEffect(() => {
+      const fetchListings = async () => {
+        try {
+          const response = await fetch("http://localhost:3040/api/auth/getlistings", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+
+          const data = await response.json();
+          setListings(data); // 👈 This updates your state with the fetched listings
+        } catch (error) {
+          console.error("❌ Error fetching listings:", error);
+        }
+      };
+
+      fetchListings();
+    }, []);
+
   return (
     <>
     <nav className="h-[68px] w-full flex justify-start items-center gap-[8px] bg-gray-800 text-[22px]">
