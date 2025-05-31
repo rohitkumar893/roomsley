@@ -7,7 +7,7 @@ const About = () => {
             <h1 className='text-[25px] sm:text-[32px] font-semibold flex justify-center items-center text-gray-800'>ABOUT</h1>
         <p className='text-[18px] sm:text-[20px] font-small'> <span className='font-semibold'>Find, List, and Rent with Ease :</span><br />
 
-            We offer a seamless experience with a wide range of verified listings tailored for students, professionals, and newcomers to any city. Every listing is pre-screened for safety, affordability, and comfort—eliminating the hassle of endless searching and unreliable posts.<br /><br />
+            We offer a seamless experience with a wide range of verified listings tailored for students, professionals, and newcomers to any city. Every listing is pre-screened for safety, affordability, and comfort-eliminating the hassle of endless searching and unreliable posts.<br /><br />
 
             <span className='font-semibold'>List Property with Confidence :</span><br />
 
