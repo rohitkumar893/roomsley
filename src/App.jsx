@@ -53,7 +53,7 @@ function App() {
   return (
     <>
       <div className="first w-[100%]">
-      <nav className="h-[68px] w-full flex justify-between items-center bg-gray-800 text-[22px]">
+      <nav className="h-[68px] w-full flex justify-between items-center bg-gray-800 text-[22px] sticky top-0 z-50">
         <div className='w-full flex justify-start items-center gap-[8px]'>
           <img src='door.png' className='homeicon h-[35px]'></img>
           <h1 className='text-white cursor-pointer' onClick={() => window.location.reload()}>Roomsley</h1>
@@ -91,7 +91,7 @@ function App() {
       </div>
 
       <div className='second flex flex-col gap-[100px]'>
-        <h1 className='services rounded-xl text-[35px] sm:text-[40px] text-center text font-semibold text-white bg-gray-800'>SERVICES</h1>
+        <h1 className='services rounded-xl text-[35px] sm:text-[40px] text-center text font-semibold text-white bg-gray-800 z-50'>SERVICES</h1>
 
         <div className='findrooms flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-lg shadow-gray-600'>
           <img src='dispimg.jpg' className='sm:h-[235px] sm:w-[235px] h-full w-full rounded-[15px]'></img>
