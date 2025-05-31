@@ -59,13 +59,13 @@ function App() {
           <h1 className='text-white cursor-pointer' onClick={() => window.location.reload()}>Roomsley</h1>
         </div>
 
-        <Link to='/about' className='about'><h1 className='w-full text-white flex justify-end items-center'>ABOUT</h1></Link>
+        <Link to='/about' className='about'><h1 className='w-full text-white flex justify-end items-center font-medium'>ABOUT</h1></Link>
         </nav>
 
         <nav className='h-[115px] flex justify-center items-center gap-[42px] md:gap-[122px]'>
-            <ul><h2 className='homebtn text-[18px] hover:scale-110 text-gray-800 font-medium' onClick={() => window.location.reload()}>HOME</h2></ul>
-            <ul><Link to="/login"><h2 className='text-[18px] hover:scale-110 text-gray-800 font-medium'>LOGIN</h2></Link></ul>
-            <ul><Link to='/signup'><h2 className='text-[18px] hover:scale-110 text-gray-800 font-medium'>SIGNUP</h2></Link></ul>
+            <ul><h2 className='homebtn text-[18px] hover:scale-110 text-gray-800 font-semibold' onClick={() => window.location.reload()}>HOME</h2></ul>
+            <ul><Link to="/login"><h2 className='text-[18px] hover:scale-110 text-gray-800 font-semibold'>LOGIN</h2></Link></ul>
+            <ul><Link to='/signup'><h2 className='text-[18px] hover:scale-110 text-gray-800 font-semibold'>SIGNUP</h2></Link></ul>
           </nav>
 
         <div className='landingcontainer h-[100%] w-[100%] flex flex-col sm:flex-row justify-center items-center'>
