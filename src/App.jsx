@@ -59,7 +59,9 @@ function App() {
           <h1 className='text-white cursor-pointer' onClick={() => window.location.reload()}>Roomsley</h1>
         </div>
 
-        <Link to='/about' className='about'><h1 className='w-full text-white flex justify-end items-center font-medium'>ABOUT</h1></Link>
+        <Link to='/about' className='about'>
+        <img src='about.png' title="About" className='object-fill h-[35px]'></img>
+        </Link>
         </nav>
 
         <nav className='h-[115px] flex justify-center items-center gap-[42px] md:gap-[122px]'>
@@ -75,7 +77,7 @@ function App() {
                   <h1 className='textlogo text-[52px] w-[300px] md:text-[60px] font-bold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
                   <h2 className='text-[18px] sm:w-[410px] w-[360px] font-medium text-gray-700'> Finding a place or offering one? <br /> Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
-                  <button className="buttonn w-[180px]">
+                  <button className="buttonn w-[180px]" title='Explore Rooms'>
                   <img src='roomicon.png' className='h-[34px]'></img>
                   <h1 className='text-[25px] font-semibold'>EXPLORE</h1>
                   </button>
