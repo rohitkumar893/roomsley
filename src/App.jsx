@@ -60,7 +60,7 @@ function App() {
         </div>
 
         <Link to='/about' className='about'>
-        <img src='about.png' title="About" className='object-fill h-[35px]'></img>
+        <img src='about.png' title="About" className='object-fill sm:h-[35px] sm:w-[35px] h-[35px] w-[30px]'></img>
         </Link>
         </nav>
 
