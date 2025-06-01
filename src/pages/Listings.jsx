@@ -137,6 +137,7 @@ const handleSubmit = async (e) => {
         {listings.map((listing, index) => (
           <div key={index} className="addrooms h-[600px] w-[350px] sm:h-[650px] sm:w-[400px] rounded-xl overflow-clip">
             <div className='h-[65%] overflow-clip'>
+              
               <img 
                 src={`http://localhost:3040/uploads/${listing.image}`} 
                 alt="Image not availaible" 
@@ -147,8 +148,8 @@ const handleSubmit = async (e) => {
               <h1><span className='font-semibold'>Rent/month :&nbsp;</span>₹{listing.price}</h1>
               <h1><span className='font-semibold'>Name :&nbsp;</span>{listing.name}</h1>
               <h1><span className='font-semibold'>Contact :&nbsp;</span>{listing.contact}</h1>
-              <h1><span className='font-semibold'>Location :&nbsp;</span>{listing.location}</h1>
-            </div>
+              <h1><span className='font-semibold'>Location :&nbsp;</span>{listing.location}<img src="remove.png" className='remove h-[35px] w-[35px] z-[4]'></img></h1>
+              </div>
           </div>
         ))}
     </div>

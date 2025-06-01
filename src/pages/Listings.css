@@ -97,12 +97,20 @@ ul:hover{
     color: silver;
 }
 
+.remove{
+    margin-left: 325px;
+}
+
 @media(max-width:780px){
     .container3{
     padding-left: 14px;
     padding-right: 14px;
     grid-template-rows: none;
     grid-template-columns: 1fr;
+    }
+
+    .remove{
+        margin-left: 278px;
     }
 }
 
