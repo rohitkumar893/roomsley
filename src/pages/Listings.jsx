@@ -148,7 +148,7 @@ const handleSubmit = async (e) => {
               <h1><span className='font-semibold'>Rent/month :&nbsp;</span>₹{listing.price}</h1>
               <h1><span className='font-semibold'>Name :&nbsp;</span>{listing.name}</h1>
               <h1><span className='font-semibold'>Contact :&nbsp;</span>{listing.contact}</h1>
-              <h1><span className='font-semibold'>Location :&nbsp;</span>{listing.location}<img src="remove.png" className='remove h-[35px] w-[35px] z-[4]'></img></h1>
+              <h1><span className='font-semibold'>Location :&nbsp;</span>{listing.location}<img src="remove.png" className='remove h-[35px] w-[35px] z-[2] cursor-pointer'></img></h1>
               </div>
           </div>
         ))}
