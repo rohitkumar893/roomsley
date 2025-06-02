@@ -95,6 +95,24 @@ const handleSubmit = async (e) => {
         }
       };
 
+      const deleteList = async (listing) => {
+        const response = await fetch("http://localhost:3040/api/auth/deletelisting",{
+          method:"POST",
+          headers:{
+            "Content-Type":"application/json"
+          },
+          body:JSON.stringify({ _id: listing._id })
+        });
+
+        if (response.ok) {
+      toast.success("Listing deleted!");
+      fetchListings();
+      
+      } else {
+        toast.error("Failed to delete listing.");
+      }
+      };
+
   return (
     <>
     <ToastContainer />
@@ -148,7 +166,8 @@ const handleSubmit = async (e) => {
               <h1><span className='font-semibold'>Rent/month :&nbsp;</span>₹{listing.price}</h1>
               <h1><span className='font-semibold'>Name :&nbsp;</span>{listing.name}</h1>
               <h1><span className='font-semibold'>Contact :&nbsp;</span>{listing.contact}</h1>
-              <h1><span className='font-semibold'>Location :&nbsp;</span>{listing.location}<img src="remove.png" className='remove h-[35px] w-[35px] z-[2] cursor-pointer'></img></h1>
+              <h1><span className='font-semibold'>Location :&nbsp;</span>{listing.location}
+              <img src="remove.png" className='remove h-[35px] w-[35px] z-[2] cursor-pointer' onClick={() => deleteList(listing)}></img></h1>
               </div>
           </div>
         ))}
