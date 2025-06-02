@@ -30,6 +30,11 @@ const Listings = () => {
 const handleSubmit = async (e) => {
   e.preventDefault();
 
+  if (!image || !price || !name || !contact || !location) {
+    toast.error("Fill all details!");
+    return;
+  }
+
   try{
     const formData = new FormData();
       formData.append("image", image);
@@ -53,6 +58,8 @@ const handleSubmit = async (e) => {
       setModal(false);
 
        fetchListings();
+
+       toast.success("Listing Created!")
   }
 
   catch (error) {
@@ -105,7 +112,7 @@ const handleSubmit = async (e) => {
         });
 
         if (response.ok) {
-      toast.success("Listing deleted!");
+      toast.success("Listing Removed!");
       fetchListings();
       
       } else {
