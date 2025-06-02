@@ -60,7 +60,7 @@ function App() {
         </div>
 
         <Link to='/about' className='about'>
-        <img src='about.png' title="About" className='object-fill sm:h-[35px] sm:w-[35px] h-[35px] w-[32px]'></img>
+        <img src='about.png' title="About" className='object-fill sm:h-[35px] sm:w-[35px] h-[35px] w-[32px] hover:scale-110'></img>
         </Link>
         </nav>
 
