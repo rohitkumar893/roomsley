@@ -2,7 +2,16 @@ import './About.css'
 
 const About = () => {
   return (
+    <>
+    <nav className="h-[68px] w-full flex justify-between items-center bg-gray-800 text-[22px] z-50">
+        <div className='w-full flex justify-start items-center gap-[8px]'>
+          <img src='door.png' className='homeicon h-[35px]'></img>
+          <h1 className='text-white cursor-pointer' onClick={() => window.location.reload()}>Roomsley</h1>
+        </div>
+        </nav>
     <div className='aboutpage w-full flex justify-center items-center'>
+        
+
         <div className='aboutcontainer flex flex-col gap-[10px] rounded-3xl'>
             <h1 className='text-[25px] sm:text-[32px] font-semibold flex justify-center items-center text-gray-800'>ABOUT</h1>
         <p className='text-[18px] sm:text-[20px] font-small'> <span className='font-semibold'>Find, List, and Rent with Ease :</span><br />
@@ -18,6 +27,7 @@ const About = () => {
             Our Easy Deal service streamlines the rental process with fast and transparent. Whether you're a tenant or a property owner, we ensure clear terms, and a stress-free move-in experience-making renting straightforward, fair, and efficient.</p><br /><br />
         </div>
     </div>
+    </>
   )
 }
 
