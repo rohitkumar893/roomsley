@@ -88,7 +88,7 @@ const handleSubmit = async (e) => {
     
     const fetchListings = async () => {
         try {
-          const response = await fetch("http://localhost:3040/api/auth/getlistings", {
+          const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/getlistings", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
