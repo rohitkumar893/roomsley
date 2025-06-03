@@ -45,7 +45,7 @@ const handleSubmit = async (e) => {
 
     console.log({ image, price, name, contact, location });
 
-    const response = await fetch("http://localhost:3040/api/auth/listings", {
+    const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/listings", {
       method:"POST",
       body:formData,
   })
@@ -103,7 +103,7 @@ const handleSubmit = async (e) => {
       };
 
       const deleteList = async (listing) => {
-        const response = await fetch("http://localhost:3040/api/auth/deletelisting",{
+        const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/deletelisting",{
           method:"POST",
           headers:{
             "Content-Type":"application/json"
@@ -164,7 +164,7 @@ const handleSubmit = async (e) => {
             <div className='h-[65%] overflow-clip'>
               
               <img 
-                src={`http://localhost:3040/uploads/${listing.image}`} 
+                src={`https://roomsleybackendrender.onrender.com/uploads/${listing.image}`} 
                 alt="Image not availaible" 
                 className='addrooms rounded-t-xl object-cover w-full h-full'
               />
