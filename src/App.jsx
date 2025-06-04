@@ -27,8 +27,10 @@ function App() {
       localStorage.removeItem("isLoggedIn");
       setIsLoggedIn(false);
       toast.success("Logged out!");
-      window.location.href = "/";
-    };
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 800);
+      };
 
   useGSAP(() => {
     gsap.from(".services",{
