@@ -5,9 +5,23 @@ import gsap from 'gsap'
 import React from 'react';
 import './App.css'
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+  const loginStatus = localStorage.getItem("isLoggedIn");
+  setIsLoggedIn(loginStatus === "true");
+}, []);
+
+const handleLogout = () => {
+  localStorage.removeItem("isLoggedIn");
+  setIsLoggedIn(false);
+  toast.info("Logged out!");
+};
 
   useGSAP(() => {
     gsap.from(".services",{
@@ -65,9 +79,32 @@ function App() {
         </nav>
 
         <nav className='h-[115px] flex justify-center items-center gap-[42px] md:gap-[122px]'>
-            <ul><h2 className='homebtn text-[18px] hover:scale-110 text-gray-800 font-semibold' onClick={() => window.location.reload()}>HOME</h2></ul>
-            <ul><Link to="/login"><h2 className='text-[18px] hover:scale-110 text-gray-800 font-semibold'>LOGIN</h2></Link></ul>
-            <ul><Link to='/signup'><h2 className='text-[18px] hover:scale-110 text-gray-800 font-semibold'>SIGNUP</h2></Link></ul>
+          <ul>
+          <h2 className='homebtn text-[18px] hover:scale-110 text-gray-800 font-semibold' onClick={() => window.location.reload()}>HOME</h2>
+          </ul>
+            {isLoggedIn ? (
+              <ul>
+                <h2
+                  onClick={handleLogout}
+                  className='cursor-pointer text-[18px] hover:scale-110 text-gray-800 font-semibold'
+                >
+                  LOGOUT
+                </h2>
+              </ul>
+            ) : (
+              <>
+                <ul>
+                  <Link to="/login">
+                    <h2 className='text-[18px] hover:scale-110 text-gray-800 font-semibold'>LOGIN</h2>
+                  </Link>
+                </ul>
+                <ul>
+                  <Link to='/signup'>
+                    <h2 className='text-[18px] hover:scale-110 text-gray-800 font-semibold'>SIGNUP</h2>
+                  </Link>
+                </ul>
+              </>
+            )}
           </nav>
 
         <div className='landingcontainer h-[100%] w-[100%] flex flex-col sm:flex-row justify-center items-center'>

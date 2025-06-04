@@ -30,6 +30,7 @@ const Login = () => {
         const data = await response.json();
         if (response.ok) {
           toast.success(data.message || "Login successful!");
+          localStorage.setItem("isLoggedIn", "true");
           navigate('/');
         } else {
           toast.error(data.message || "Invalid username or password");
