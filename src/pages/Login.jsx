@@ -31,7 +31,7 @@ const Login = () => {
         if (response.ok) {
           toast.success(data.message || "Login successful!");
           localStorage.setItem("isLoggedIn", "true");
-          navigate('/');
+          window.location.href = "/";
         } else {
           toast.error(data.message || "Invalid username or password");
         }
