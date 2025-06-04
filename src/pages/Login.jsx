@@ -31,6 +31,7 @@ const Login = () => {
         if (response.ok) {
           toast.success(data.message || "Login successful!");
           localStorage.setItem("isLoggedIn", "true");
+          window.dispatchEvent(new Event("storage")); // manually trigger storage event
           navigate("/");
         } else {
           toast.error(data.message || "Invalid username or password");

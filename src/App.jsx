@@ -12,9 +12,16 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
+  const checkLoginStatus = () => {
     const loginStatus = localStorage.getItem("isLoggedIn");
     setIsLoggedIn(loginStatus === "true");
-  }, [location]);
+  };
+
+  checkLoginStatus();
+
+  window.addEventListener("storage", checkLoginStatus);
+  return () => window.removeEventListener("storage", checkLoginStatus);
+}, []);
 
 const handleLogout = () => {
   localStorage.removeItem("isLoggedIn");
