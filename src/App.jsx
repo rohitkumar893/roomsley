@@ -24,9 +24,10 @@ function App() {
   }, []);
 
     const handleLogout = () => {
+      window.location.href = "/"
       localStorage.removeItem("isLoggedIn");
       setIsLoggedIn(false);
-      window.location.href = "/"
+      
       toast.success("Logged out!");
     };
 
