@@ -26,11 +26,9 @@ function App() {
     const handleLogout = () => {
       localStorage.removeItem("isLoggedIn");
       setIsLoggedIn(false);
+      window.location.href = "/"
       toast.success("Logged out!");
-      setTimeout(() => {
-        window.location.href = "/";
-      }, 800);
-      };
+    };
 
   useGSAP(() => {
     gsap.from(".services",{
