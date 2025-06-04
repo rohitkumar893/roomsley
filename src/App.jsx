@@ -21,13 +21,14 @@ function App() {
 
   window.addEventListener("storage", checkLoginStatus);
   return () => window.removeEventListener("storage", checkLoginStatus);
-}, []);
+  }, []);
 
-const handleLogout = () => {
-  localStorage.removeItem("isLoggedIn");
-  setIsLoggedIn(false);
-  toast.info("Logged out!");
-};
+    const handleLogout = () => {
+      localStorage.removeItem("isLoggedIn");
+      setIsLoggedIn(false);
+      toast.success("Logged out!");
+      window.location.reload();
+    };
 
   useGSAP(() => {
     gsap.from(".services",{
