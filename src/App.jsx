@@ -69,7 +69,7 @@ function App() {
 
           <div className='w-full flex justify-center'>
             <div className="searchh w-full flex justify-center items-center">
-                <input placeholder="Search location..." class="search__input" type="text" />
+                <input placeholder="Search city..." class="search__input" type="text" />
                 <Link to="/search" class="search__button">
                   <img src="search.png" className='search__button w-[22px] h-[22px] '></img></Link>
                   </div>
