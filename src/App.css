@@ -23,6 +23,7 @@ nav{
   animation-duration: 2s;
   animation-delay: 0.6s;
   animation-fill-mode: forwards;
+  margin-top: 50px;
 }
 
 
@@ -184,11 +185,10 @@ ul:hover{
   display: flex;
   align-items: center;
   text-align: center;
-  
 }
 
 .search__input {
-  background-color: #fff;
+  background-color: #ffffffe0;
   font-family: inherit;
   font-size: inherit;
   border: 2px solid #767676;
@@ -196,8 +196,9 @@ ul:hover{
   padding: 5px 10px;
   border-radius: 4px;
   margin-right: -1.5rem;
-  height: 30px;
-  width: 15rem;
+  height: 40px;
+  width: 380px;
+  border-radius: 40px;
 }
 
 .search__input::-webkit-input-placeholder {
@@ -207,7 +208,8 @@ ul:hover{
 }
 
 .search__button {
-  border: none;
+  transform: translate(-5px);
+  border:none;
   background-color: #fff;
   margin-top: 0.1em;
 }
