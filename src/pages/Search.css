@@ -1,0 +1,7 @@
+nav{
+  opacity:0;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}

@@ -70,28 +70,16 @@ function App() {
           <div className='w-full flex justify-center'>
             <div className="searchh w-full flex justify-center items-center">
                 <input placeholder="Search location..." class="search__input" type="text" />
-                <button class="search__button">
-                  <svg
-                    viewBox="0 0 16 16"
-                    class="bi bi-search"
-                    fill="currentColor"
-                    height="16"
-                    width="16"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
+                <Link to="/search" class="search__button">
+                  <img src="search.png" className='search__button w-[22px] h-[22px] '></img></Link>
+                  </div>
             </div>
 
         <div className='landingcontainer h-[100%] w-[100%] flex flex-col sm:flex-row justify-center items-center'>
           <div className='padder h-[100%] w-[100%]'>
             <div className='marginctrl flex flex-col md:flex-row h-full w-full justify-between gap-[45px]'>
               <div className='flex flex-col gap-[15px] sm:gap-[12px]'>
-                  <h1 className='textlogo text-[52px] w-[300px] md:text-[60px] font-bold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
+                  <h1 className='textlogo text-[52px] w-[300px] md:text-[58px] font-bold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
                   <h2 className='text-[18px] sm:w-[410px] w-[360px] font-medium text-gray-700'> Finding a place or offering one? <br /> Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
                   <button className="buttonn w-[180px]" title='Explore Rooms'>
