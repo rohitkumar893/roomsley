@@ -320,4 +320,8 @@ ul:hover{
   .divider{
     margin-top: 40px;
   }
+
+  .search__input {
+  width: 320px;
+}
 }
