@@ -178,6 +178,7 @@ ul:hover{
 
 .roomimg{
   box-shadow: 8px 8px 3px #1E2939;
+  object-fit: cover;
 }
 
 
