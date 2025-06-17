@@ -164,7 +164,7 @@ const handleSubmit = async (e) => {
             <div className='h-[65%] overflow-clip'>
               
               <img 
-                src={`https://roomsleybackendrender.onrender.com/uploads/${listing.image}`} 
+                src={listing.image}
                 alt="Image not availaible" 
                 className='addrooms rounded-t-xl object-cover w-full h-full'
               />
