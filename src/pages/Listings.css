@@ -26,10 +26,6 @@
     margin-bottom: 60px;
 }
 
-.spacer{
-height: 150px;
-}
-
 .add{
     opacity: 0;
     animation-name: slideIn;
