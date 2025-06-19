@@ -26,6 +26,10 @@
     animation-fill-mode: forwards;
 }
 
+.spacer{
+height: 50px;
+}
+
 .add{
     opacity: 0;
     animation-name: slideIn;

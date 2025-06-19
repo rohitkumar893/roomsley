@@ -5,3 +5,21 @@ nav{
   animation-delay: 0s;
   animation-fill-mode: forwards;
 }
+
+.prnt{
+  height: 100%;
+  width: 100%;
+  opacity:0;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.resultsfor{
+  margin-top: 50px;
+}
+
+.roomsavail{
+  margin-top: 50px;
+}

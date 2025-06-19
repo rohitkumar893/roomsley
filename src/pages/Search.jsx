@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
+import './Search.css'
 
 const Search = () => {
   const location = useLocation();
@@ -32,19 +33,19 @@ const Search = () => {
   }, [searchTerm]);
 
   return (
-    <div>
+    <div className="prnt">
       <nav className="h-[68px] w-full flex justify-start items-center gap-[8px] bg-gray-800 text-[22px]">
         <img src='door.png' className='homeicon h-[35px]' alt="icon" />
         <Link to='/'><h1 className='text-white'>Roomsley</h1></Link>
       </nav>
 
-      <div className='text-center text-[28px] mt-6 text-gray-800 font-semibold'>
+      <div className='resultsfor text-center text-[28px] text-gray-800 font-semibold'>
         Results for "{searchTerm}"
       </div>
 
       {results.length === 0 ? (
-        <p className="text-center text-gray-600 text-[18px] mt-4">
-          No listings found.
+        <p className="roomsavail text-center text-gray-600 text-[22px]">
+          No rooms availaible in this city.
         </p>
       ) : (
         <div className="container3 flex flex-wrap justify-center gap-6 mt-8">
