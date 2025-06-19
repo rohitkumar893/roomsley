@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import React from 'react';
 import './App.css'
 import { Link } from 'react-router-dom';
@@ -23,6 +24,16 @@ function App() {
       localStorage.removeItem("isLoggedIn");
       setIsLoggedIn(false);
   };
+
+  const [searchInput, setSearchInput] = useState("");
+    const navigate = useNavigate();
+
+  const handleSearch = () => {
+    const query = searchInput.trim();
+    if(query !== ""){
+      navigate("/search?query=" + encodeURIComponent(query));
+    }
+  }
 
   return (
     <>
@@ -69,9 +80,14 @@ function App() {
 
           <div className='w-full flex justify-center'>
             <div className="searchh w-full flex justify-center items-center">
-                <input placeholder="Search city..." class="search__input" type="text" />
-                <Link to="/search" class="search__button">
-                  <img src="search.png" className='search__button w-[22px] h-[22px] '></img></Link>
+                <input placeholder="Search city..."
+                class="search__input" 
+                type="text" 
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.target.value)}
+                />
+                <button className ="search__button" onClick={handleSearch}>
+                  <img src="search.png" className='search__button w-[22px] h-[22px] '></img></button>
                   </div>
             </div>
 
