@@ -91,7 +91,11 @@ function App() {
                   }
                 }}
                 />
-                <button className ="search__button" onClick={handleSearch} >
+                <button className ="search__button" onClick={handleSearch} onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    {handleSearch};
+                  }
+                }}>
                   <img src="search.png" className='search__button w-[22px] h-[22px] '></img></button>
                   </div>
             </div>
