@@ -15,7 +15,7 @@
     width: 100%;
     display: grid;
     place-items: center;
-    grid-auto-rows: minmax(0, auto);
+    
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 60px;
     column-gap: 30px;
