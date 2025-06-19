@@ -21,10 +21,7 @@ const Search = () => {
         });
 
         const data = await response.json();
-        setTimeout(() => {
         setResults(data);
-        }, 1000);
-
       } catch (error) {
         console.error("❌ Error fetching search results:", error);
       }
