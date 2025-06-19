@@ -27,6 +27,10 @@
     margin-bottom: 20px;
 }
 
+.inputimage {
+  opacity: 0;
+}
+
 .spacer{
 height: 50px;
 }
