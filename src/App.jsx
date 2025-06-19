@@ -85,6 +85,11 @@ function App() {
                 type="text" 
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleSearch();
+                  }
+                }}
                 />
                 <button className ="search__button" onClick={handleSearch}>
                   <img src="search.png" className='search__button w-[22px] h-[22px] '></img></button>
