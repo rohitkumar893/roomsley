@@ -7,11 +7,12 @@
 } */
 
 .container3{
+    margin-bottom: 70px;
     margin-top:50px;
     padding-bottom:80px;
     padding-left: 120px;
     padding-right: 120px;
-    height: 100%;
+    height: auto;
     width: 100%;
     display: grid;
     place-items: center;
