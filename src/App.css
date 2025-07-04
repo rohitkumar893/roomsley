@@ -44,10 +44,6 @@ nav{
   margin-top: 50px;
 }
 
-.padder{
-  padding-left: 180px;
-  padding-right: 180px;
-}
 
 .textlogo{
   text-shadow: #ababab 2px 2px 5px;
@@ -302,11 +298,6 @@ ul:hover{
   .roomimg{
     height: 400px;
   }
-  .padder{
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  
 }
 
 @media(max-width:780px){
@@ -317,15 +308,16 @@ ul:hover{
   .services{
     margin-top:30px;
   }
-  .padder{
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+ 
   .divider{
-    margin-top: 40px;
+    margin-top: 60px;
   }
 
   .search__input {
   width: 320px;
+}
+
+.textlogo{
+  margin-top: 20px;
 }
 }
