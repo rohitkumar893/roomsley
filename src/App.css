@@ -26,6 +26,9 @@ nav{
   margin-top: 50px;
 }
 
+.perfect{
+  color:teal;
+}
 
 .second{
   padding: 80px;
@@ -47,7 +50,7 @@ nav{
 }
 
 .textlogo{
-  text-shadow: #ababab 3px 3px 6px;
+  text-shadow: #ababab 2px 2px 5px;
   color: #1E2939;
 }
 
@@ -134,7 +137,7 @@ ul:hover{
   border: none;
   color: #fff;
   cursor: pointer;
-  background-color: rgb(52, 52, 57);
+  background-color: teal;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;

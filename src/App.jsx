@@ -98,21 +98,21 @@ function App() {
 
         <div className='landingcontainer h-[100%] w-[100%] flex flex-col sm:flex-row justify-center items-center'>
           <div className='padder h-[100%] w-[100%]'>
-            <div className='marginctrl flex flex-col md:flex-row h-full w-full justify-between gap-[45px]'>
-              <div className='flex flex-col gap-[15px] sm:gap-[12px]'>
-                  <h1 className='textlogo text-[52px] w-[300px] md:text-[58px] font-bold leading-tight tracking-wide'>Find Perfect<br />Room<span className='animate-pulse'>.</span></h1>
-                  <h2 className='text-[18px] sm:w-[410px] w-[360px] font-medium text-gray-700'> Finding a place or offering one? <br /> Roomsley makes it simple and quick.</h2>
+            <div className='marginctrl flex flex-col md:flex-col items-center h-full w-full justify-between gap-[45px]'>
+              {/* <div className='flex flex-col gap-[15px] sm:gap-[12px]'> */}
+                  <h1 className='textlogo text-[52px] w-[500px] md:text-[54px] text-center font-bold leading-tight tracking-wide'>Find <span className='perfect'>Perfect</span> Room.</h1>
+                  <h2 className='text-[22px] sm:w-[600px] w-[360px] text-center font-medium text-gray-700'> Finding a place or offering one? Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
                   <button className="buttonn w-[180px]" title='Explore Rooms'>
                   <img src='roomicon.png' className='h-[34px]'></img>
-                  <h1 className='text-[25px] font-semibold'>EXPLORE</h1>
+                  <h1 className='listings text-[25px] font-semibold'>LISTINGS</h1>
                   </button>
                   </Link>
-              </div>
+              {/* </div> */}
 
-              <div>
+              {/* <div>
                 <img src='roomimg.jpg' className='roomimg h-[580px] w-[580px] sm:h-[600px] sm:w-[600px] rounded-md'></img>
-              </div>
+              </div> */}
              </div>
           </div>
         </div>
