@@ -45,19 +45,19 @@ function App() {
         </div>
 
         <Link to='/about' className='about'>
-        <img src='about.png' title="About" className='object-fill sm:h-[35px] sm:w-[35px] h-[35px] w-[32px] hover:scale-110'></img>
+        <img src='about.png' title="About" className='object-fill sm:h-[35px] sm:w-[35px] h-[35px] w-[35px] hover:scale-110'></img>
         </Link>
         </nav>
 
-        <nav className='h-[105px] flex justify-center items-center gap-[42px] md:gap-[122px]'>
+        <nav className='navbuttons h-[105px] flex justify-center items-center gap-[60px] md:gap-[142px]'>
           <ul>
-          <h2 className='homebtn text-[18px] hover:scale-110 text-gray-800 font-semibold' onClick={() => window.location.reload()}>HOME</h2>
+          <h2 className='homebtn text-[18px] hover:scale-110 font-semibold' onClick={() => window.location.reload()}>HOME</h2>
           </ul>
             {isLoggedIn ? (
               <ul>
                 <h2
                   onClick={handleLogout}
-                  className='cursor-pointer text-[18px] hover:scale-110 text-gray-800 font-semibold'
+                  className='cursor-pointer text-[18px] hover:scale-110 text-teal font-semibold'
                 >
                   LOGOUT
                 </h2>
@@ -66,12 +66,12 @@ function App() {
               <>
                 <ul>
                   <Link to="/login">
-                    <h2 className='text-[18px] hover:scale-110 text-gray-800 font-semibold'>LOGIN</h2>
+                    <h2 className='navbuttons text-[18px] hover:scale-110 font-semibold'>LOGIN</h2>
                   </Link>
                 </ul>
                 <ul>
                   <Link to='/signup'>
-                    <h2 className='text-[18px] hover:scale-110 text-gray-800 font-semibold'>SIGNUP</h2>
+                    <h2 className='navbuttons text-[18px] hover:scale-110 font-semibold'>SIGNUP</h2>
                   </Link>
                 </ul>
               </>
@@ -98,7 +98,7 @@ function App() {
 
         <div className='landingcontainer h-[100%] w-[100%] flex flex-col sm:flex-row justify-center items-center'>
           <div className='padder h-[100%] w-[100%]'>
-            <div className='marginctrl flex flex-col md:flex-col items-center h-full w-full justify-between gap-[75px] sm:gap-[45px]'>
+            <div className='marginctrl flex flex-col md:flex-col items-center h-full w-full justify-between gap-[70px] sm:gap-[45px]'>
               {/* <div className='flex flex-col gap-[15px] sm:gap-[12px]'> */}
                   <h1 className='textlogo text-[52px] w-[380px] md:text-[54px] text-center font-bold leading-tight tracking-wide'>Find <span className='perfect'>Perfect</span> Room.</h1>
                   <h2 className='text-[22px] sm:w-[600px] w-[360px] text-center font-medium text-gray-700'> Finding a place or offering one? Roomsley makes it simple and quick.</h2>
