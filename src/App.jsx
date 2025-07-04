@@ -98,9 +98,9 @@ function App() {
 
         <div className='landingcontainer h-[100%] w-[100%] flex flex-col sm:flex-row justify-center items-center'>
           <div className='padder h-[100%] w-[100%]'>
-            <div className='marginctrl flex flex-col md:flex-col items-center h-full w-full justify-between gap-[80px] sm:gap-[45px]'>
+            <div className='marginctrl flex flex-col md:flex-col items-center h-full w-full justify-between gap-[75px] sm:gap-[45px]'>
               {/* <div className='flex flex-col gap-[15px] sm:gap-[12px]'> */}
-                  <h1 className='textlogo text-[52px] border-2 w-[380px] md:text-[54px] text-center font-bold leading-tight tracking-wide'>Find <span className='perfect'>Perfect</span> Room.</h1>
+                  <h1 className='textlogo text-[52px] w-[380px] md:text-[54px] text-center font-bold leading-tight tracking-wide'>Find <span className='perfect'>Perfect</span> Room.</h1>
                   <h2 className='text-[22px] sm:w-[600px] w-[360px] text-center font-medium text-gray-700'> Finding a place or offering one? Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
                   <button className="buttonn w-[180px]" title='Explore Rooms'>
