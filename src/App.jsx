@@ -105,7 +105,7 @@ function App() {
                   <Link to="/listings">
                   <button className="buttonn w-[180px]" title='Explore Rooms'>
                   <img src='roomicon.png' className='h-[34px]'></img>
-                  <h1 className='listings text-[25px] font-semibold'>LISTINGS</h1>
+                  <h1 className='text-[25px] font-semibold'>LISTINGS</h1>
                   </button>
                   </Link>
               {/* </div> */}
