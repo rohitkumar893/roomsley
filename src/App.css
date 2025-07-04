@@ -217,9 +217,8 @@ ul:hover{
 }
 
 .search__button {
-  transform: translate(-5px);
+  transform: translate(-10px);
   border:none;
-  margin-top: 0.1em;
 }
 
 .search__button:hover {
