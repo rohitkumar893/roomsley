@@ -23,7 +23,7 @@
     opacity: 0;
     animation-name: slideIn;
     animation-duration: 1s;
-    animation-delay: 0.3s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
     margin-top: -18px;
 }
@@ -118,6 +118,7 @@ ul:hover{
   align-items: center;
   justify-content: center;
   margin-top: 68px;
+  z-index: 15;
 }
 
 .leap-frog {
