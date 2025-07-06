@@ -11,11 +11,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 60px;
     column-gap: 30px;
-    opacity: 0;
-    animation-name: slideIn;
-    animation-duration: 1s;
-    animation-delay: 0.3s;
-    animation-fill-mode: forwards;
     margin-bottom: 60px;
 }
 
