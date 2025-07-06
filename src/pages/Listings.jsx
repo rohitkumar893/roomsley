@@ -10,6 +10,7 @@ const Listings = () => {
     const[contact, setContact] = useState("");
     const[location, setLocation] = useState("");
     const [listings, setListings] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const handleImage = (e) => {
       setImage(e.target.files[0]);
@@ -87,20 +88,23 @@ const handleSubmit = async (e) => {
 
     
     const fetchListings = async () => {
-        try {
-          const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/getlistings", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-          });
+      try {
+        setLoading(true);
+        const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/getlistings", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
 
           const data = await response.json();
-          setListings(data);
-        } catch (error) {
-          console.error("❌ Error fetching listings:", error);
-        }
-      };
+              setListings(data);
+            } catch (error) {
+              console.error("❌ Error fetching listings:", error);
+            } finally {
+              setLoading(false);
+            }
+        };
 
       const deleteList = async (listing) => {
         const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/deletelisting",{
@@ -120,6 +124,7 @@ const handleSubmit = async (e) => {
       }
       };
 
+
   return (
     <>
     <ToastContainer />
@@ -127,6 +132,14 @@ const handleSubmit = async (e) => {
         <img src='door.png' className='homeicon h-[35px]'></img>
         <Link to='/'><h1 className='text-white'>Roomsley</h1></Link>
         </nav>
+
+      {loading &&(<div id="loader-overlay">
+        <div class="leap-frog">
+          <div class="leap-frog__dot"></div>
+          <div class="leap-frog__dot"></div>
+          <div class="leap-frog__dot"></div>
+        </div>
+      </div>)}
 
     <div className='listings w-full h-[110px] flex justify-center items-center text-[32px]'>
         <h1 className='text-gray-800 font-semibold'>ROOMS</h1>

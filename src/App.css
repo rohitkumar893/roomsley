@@ -4,14 +4,6 @@ body{
   box-sizing: border-box;
 }
 
-nav{
-  opacity:0;
-  animation-name: slideIn;
-  animation-duration: 2s;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-}
-
 .navbuttons{
   color: teal;
 }
@@ -25,7 +17,7 @@ nav{
   opacity:0;
   animation-name: fadein;
   animation-duration: 2s;
-  animation-delay: 0.6s;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
   margin-top: 50px;
 }
@@ -189,7 +181,7 @@ ul:hover{
   opacity:0;
   animation-name: slideIn;
   animation-duration: 2s;
-  animation-delay: 0.5s;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
   display: flex;
   align-items: center;
