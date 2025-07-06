@@ -6,12 +6,13 @@ const Search = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const searchTerm = queryParams.get("query") || "";
-
+  const [loading, setLoading] = useState(true)
   const [results, setResults] = useState([]);
 
   useEffect(() => {
     const fetchResults = async () => {
       try {
+        setLoading(true);
         const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/getlistings", {
           method: "POST",
           headers: {
@@ -24,6 +25,10 @@ const Search = () => {
         setResults(data);
       } catch (error) {
         console.error("❌ Error fetching search results:", error);
+      }
+
+      finally {
+        setLoading(false);
       }
     };
 
@@ -38,6 +43,15 @@ const Search = () => {
         <img src='door.png' className='homeicon h-[35px]' alt="icon" />
         <Link to='/'><h1 className='text-white'>Roomsley</h1></Link>
       </nav>
+
+      {loading &&(<div id="loader-overlay">
+        <div class="leap-frog">
+          <div class="leap-frog__dot"></div>
+          <div class="leap-frog__dot"></div>
+          <div class="leap-frog__dot"></div>
+        </div>
+      </div>)}
+
 
       <div className='resultsfor text-center text-[28px] text-gray-800 font-semibold'>
         Results for "{searchTerm}"
