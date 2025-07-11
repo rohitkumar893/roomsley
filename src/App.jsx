@@ -51,7 +51,7 @@ function App() {
 
         <nav className='navbuttons h-[105px] flex justify-center items-center gap-[60px] md:gap-[142px]'>
           <ul>
-          <h2 className='homebtn text-[18px] hover:scale-110 font-semibold' onClick={() => window.location.reload()}>HOME</h2>
+          <h2 className='homebtn text-[18px] text-teal hover:scale-110 hover:text-teal-700 font-semibold' onClick={() => window.location.reload()}>HOME</h2>
           </ul>
             {isLoggedIn ? (
               <ul>
