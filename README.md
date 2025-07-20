@@ -1,4 +1,6 @@
-A simple MERN stack app to list and browse rooms for rent.
+A MERN stack app to list and browse rooms for rent.
+
+<img src="public/roomsley.png" width="700px" alt="App Screenshot">
 
 Features
 CRUD for room listings with image upload.
