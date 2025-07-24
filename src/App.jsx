@@ -35,15 +35,15 @@ function App() {
     }
   }
 
+  // Backend Ping
   useEffect(() => {
-    // Ping the backend when this component mounts
     fetch("https://roomsleybackendrender.onrender.com/ping")
       .then((res) => {
         if (!res.ok) throw new Error("Ping failed");
-        console.log("Backend is awake 🚀");
+        console.log("Backend is awake");
       })
       .catch((err) => {
-        console.error("Ping failed 😵", err);
+        console.error("Ping failed", err);
       });
   }, []);
 
@@ -133,7 +133,7 @@ function App() {
       
 
       <div className='second flex flex-col gap-[100px]'>
-        <img src="divider.png" className='divider w-[500px] h-[20px]'></img>
+        <img src="divider2.png" className='divider w-[464px] sm:w-[520px] h-[35px] mt-[-10px]'></img>
         <h1 className='services rounded-xl text-[35px] sm:text-[40px] text-center text font-semibold text-white bg-gray-800 z-5'>SERVICES</h1>
 
         <div className='findrooms flex flex-col sm:flex-row gap-[50px] w-full rounded-[15px] shadow-lg shadow-gray-600'>
