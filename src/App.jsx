@@ -37,7 +37,7 @@ function App() {
 
   useEffect(() => {
     // Ping the backend when this component mounts
-    fetch("https://roomsleybackendrender.onrender.com/")
+    fetch("https://roomsleybackendrender.onrender.com/ping")
       .then((res) => {
         if (!res.ok) throw new Error("Ping failed");
         console.log("Backend is awake 🚀");
