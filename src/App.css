@@ -14,7 +14,7 @@ body{
 }
 
 .landingcontainer{
-  height:calc(100vh - 68px - 105px - 60px);
+  min-height:calc(100vh - 68px - 105px - 60px);
   opacity:0;
   animation-name: fadein;
   animation-duration: 2s;
@@ -267,6 +267,6 @@ ul:hover{
 }
 
 .textlogo{
-  margin-top:60px;
+  margin-top:30px;
 }
 }
