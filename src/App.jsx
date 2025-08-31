@@ -109,7 +109,7 @@ function App() {
 
         <div className='landingcontainer w-[100%] flex flex-col justify-center items-center'>
           <div className='h-[100%] w-[100%]'>
-            <div className='flex flex-col md:flex-col items-center h-full w-full justify-center gap-[70px] sm:gap-[55px]'>
+            <div className='flex flex-col md:flex-col items-center h-full w-full justify-center gap-[55px]'>
                   <h1 className='textlogo text-[52px]  md:text-[75px] text-center font-bold leading-tight tracking-wide'>Find <span className='perfect'>Perfect</span> Room.</h1>
                   <h2 className='text-[22px] sm:w-[600px] w-[360px] text-center font-medium text-gray-700'> Finding a place or offering one? Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
