@@ -254,19 +254,8 @@ ul:hover{
   }
 }
 
-
-@media(max-width:1500px){
-  .roomimg{
-    height: 400px;
-  }
-}
-
 @media(max-width:700px){
 .search__input {
   width: 340px;
-}
-
-.textlogo{
-  margin-top:30px;
 }
 }
