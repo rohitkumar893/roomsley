@@ -111,7 +111,7 @@ function App() {
           <div className='h-[100%] w-[100%]'>
             <div className='flex flex-col md:flex-col items-center h-full w-full justify-center gap-[55px]'>
                   <h1 className='textlogo text-[52px]  md:text-[75px] text-center font-bold leading-tight tracking-wide'>Find <span className='perfect'>Perfect</span> Room.</h1>
-                  <h2 className='text-[22px] hidden sm:block sm:w-[600px] w-[360px] text-center font-medium text-gray-700'> Finding a place or offering one? Roomsley makes it simple and quick.</h2>
+                  <h2 className='slogan text-[20px] sm:text-[24px] sm:w-[580px] w-full text-center font-medium text-gray-700'> Finding a room or offering one? Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
                   <button className="buttonn md:w-[320px] w-[300px]" title='Explore Rooms'>
                     <img src='roomicon.png' className='h-[34px]'></img>

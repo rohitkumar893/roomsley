@@ -85,6 +85,11 @@ ul:hover{
   color:silver;
 }
 
+.slogan{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
 .homeicon{
   margin-left: 25px;
 }
