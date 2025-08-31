@@ -259,10 +259,3 @@ ul:hover{
   width: 340px;
 }
 }
-
-
-@media(max-width:900px){
-.textlogo{
-  margin-top: -15px;
-}
-}
