@@ -26,20 +26,6 @@ body{
   color:teal;
 }
 
-.second{
-  padding: 80px;
-  padding-top:150px;
-}
-
-.findrooms, .listrooms, .easydeal{
-  background-color: rgba(248, 244, 244, 0.9);
-  padding:30px;
-}
-
-.services{
-  margin-top: 50px;
-}
-
 
 .textlogo{
   text-shadow: #ababab 2px 2px 5px;
@@ -55,10 +41,6 @@ body{
 
 .firstlogo{
   filter:drop-shadow(5px 5px 40px rgb(255, 255, 255));
-}
-
-.findrooms{
-  margin-top: -50px;
 }
 
 .heading{
@@ -198,14 +180,14 @@ ul:hover{
   padding: 5px 25px;
   margin-right: -1.5rem;
   height: 48px;
-  width: 460px;
+  width: 480px;
   border-radius: 40px;
 }
 
 .search__input::-webkit-input-placeholder {
   font-weight: 400;
-  color: #686767;
-  font-size: 15px;
+  color: #8d8d8d;
+  font-size: 18px;
 }
 
 .search__button {
@@ -269,22 +251,6 @@ ul:hover{
     background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
       110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
-  }
-}
-
-
-@media(max-width:1200px){
-  .second{
-    padding: 30px;
-    padding-top:60px;
-    padding-bottom:60px;
-  }
-
-  .services{
-    margin-top: 60px;
-  }
-  .divider{
-    margin-top: 40px;
   }
 }
 
