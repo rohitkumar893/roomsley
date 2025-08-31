@@ -48,7 +48,7 @@ function App() {
 
   return (
     <>
-      <div className="first w-[100%]">
+      <div className="first w-[100%] h-full">
       <nav className="h-[68px] w-full flex justify-between items-center bg-gray-800 text-[22px] z-50">
         <div className='w-full flex justify-start items-center gap-[8px]'>
           <img src='door.png' className='homeicon h-[35px]'></img>
@@ -107,21 +107,22 @@ function App() {
                   </div>
             </div>
 
-        <div className='landingcontainer h-[100%] w-[100%] flex flex-col sm:flex-row justify-center items-center'>
-          <div className='padder h-[100%] w-[100%]'>
-            <div className='marginctrl flex flex-col md:flex-col items-center h-full w-full justify-between gap-[70px] sm:gap-[45px]'>
+        <div className='landingcontainer w-[100%] flex flex-col justify-center items-center'>
+          <div className='h-[100%] w-[100%]'>
+            <div className='flex flex-col md:flex-col items-center h-full w-full justify-center gap-[70px] sm:gap-[55px]'>
                   <h1 className='textlogo text-[52px]  md:text-[75px] text-center font-bold leading-tight tracking-wide'>Find <span className='perfect'>Perfect</span> Room.</h1>
                   <h2 className='text-[22px] sm:w-[600px] w-[360px] text-center font-medium text-gray-700'> Finding a place or offering one? Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
                   <button className="buttonn md:w-[320px] w-[300px]" title='Explore Rooms'>
                     <img src='roomicon.png' className='h-[34px]'></img>
-                    <h1 className='md:text-[24px] text-[22px] font-semibold'>AVAILAIBLE ROOMS &gt;</h1>
+                    <h1 className='md:text-[24px] text-[22px] font-semibold'>AVAILABLE ROOMS &gt;</h1>
                   </button>
                   </Link>
              </div>
           </div>
         </div>
       </div>
+
     </>
   );
 }
