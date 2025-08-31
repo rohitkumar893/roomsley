@@ -256,6 +256,6 @@ ul:hover{
 
 @media(max-width:700px){
 .search__input {
-  width: 340px;
+  width: 330px;
 }
 }
