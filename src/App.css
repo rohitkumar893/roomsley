@@ -261,24 +261,12 @@ ul:hover{
   }
 }
 
-@media(max-width:780px){
-  .roomimg{
-    margin-top: 40px;
-  }
-  
-  .services{
-    margin-top:30px;
-  }
- 
-  .divider{
-    margin-top: 75px;
-  }
-
-  .search__input {
+@media(max-width:700px){
+.search__input {
   width: 340px;
 }
 
 .textlogo{
-  margin-top: 20px;
+  margin-top:60px;
 }
 }
