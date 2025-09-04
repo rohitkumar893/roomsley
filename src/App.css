@@ -39,6 +39,10 @@ body{
   filter:drop-shadow(5px 5px 40px rgb(255, 255, 255));
 }
 
+.herocontainer{
+  margin-top: -35px;
+}
+
 .firstlogo{
   filter:drop-shadow(5px 5px 40px rgb(255, 255, 255));
 }
