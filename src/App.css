@@ -263,4 +263,8 @@ ul:hover{
 .search__input {
   width: 330px;
 }
+
+.herocontainer{
+  margin-top: -60px;
+}
 }
