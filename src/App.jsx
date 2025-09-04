@@ -110,11 +110,11 @@ function App() {
         <div className='landingcontainer w-[100%] flex flex-col justify-center items-center'>
           <div className='h-[100%] w-[100%]'>
             <div className='flex flex-col md:flex-col items-center h-full w-full justify-center gap-[55px]'>
-              <div className='herocontainer flex gap-[8px] sm:gap-[14px] w-full justify-center flex-wrap leading-tight tracking-wide gap-y-1'>
-                  <img src="property.png" className='property h-[48px] w-[48px] md:h-[70px] md:w-[70px]' />
-                  <h1 className='textlogo text-[45px] sm:text-[52px]  md:text-[71px] text-center font-bold leading-tight tracking-wide'>Find </h1>
-                  <h1 className='textlogo text-[45px] sm:text-[52px]  md:text-[71px] text-center font-bold leading-tight tracking-wide'><span className='perfect'>Perfect</span></h1>
-                  <h1 className='textlogo text-[45px] sm:text-[52px] md:text-[71px] text-center font-bold leading-tight tracking-wide'> Room.</h1>
+              <div className='herocontainer flex gap-[10px] sm:gap-[14px] w-full justify-center flex-wrap leading-tight tracking-wide gap-y-1'>
+                  <img src="property.png" className='property h-[45px] w-[45px] sm:h-[52px] sm:w-[52px] md:h-[70px] md:w-[70px]' />
+                  <h1 className='textlogo text-[47px] sm:text-[52px]  md:text-[71px] text-center font-bold leading-tight tracking-wide'>Find </h1>
+                  <h1 className='textlogo text-[47px] sm:text-[52px]  md:text-[71px] text-center font-bold leading-tight tracking-wide'><span className='perfect'>Perfect</span></h1>
+                  <h1 className='textlogo text-[47px] sm:text-[52px] md:text-[71px] text-center font-bold leading-tight tracking-wide'> Room.</h1>
               </div>
                   <h2 className='slogan text-[19px] sm:text-[24px] sm:w-[580px] w-full text-center font-medium text-gray-700'> Finding a room or offering one? Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
