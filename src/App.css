@@ -14,7 +14,6 @@ body{
 }
 
 .landingcontainer{
-  min-height:calc(100vh - 68px - 105px - 60px);
   opacity:0;
   animation-name: fadein;
   animation-duration: 2s;

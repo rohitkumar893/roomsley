@@ -48,7 +48,7 @@ function App() {
 
   return (
     <>
-      <div className="first w-full h-full">
+      <div className="first w-full h-full flex flex-col">
       <nav className="h-[68px] w-full flex justify-between items-center bg-gray-800 text-[22px] z-50">
         <div className='w-full flex justify-start items-center gap-[8px]'>
           <img src='door.png' className='homeicon h-[35px]'></img>
@@ -107,7 +107,7 @@ function App() {
                   </div>
             </div>
 
-        <div className='landingcontainer w-[100%] flex flex-col justify-center items-center'>
+        <div className='landingcontainer flex-1 flex w-[100%] flex-col justify-center items-center'>
           <div className='h-[100%] w-[100%]'>
             <div className='flex flex-col items-center h-full w-full justify-center gap-[48px]'>
               <div className='herocontainer flex gap-[10px] sm:gap-[14px] w-full justify-center flex-wrap leading-tight tracking-wide gap-y-1'>
@@ -118,9 +118,9 @@ function App() {
               </div>
                   <h2 className='slogan text-[19px] sm:text-[24px] sm:w-[580px] w-full text-center font-medium text-gray-700'> Finding a room or offering one? Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
-                  <button className="buttonn md:w-[320px] w-[290px]" title='Explore Rooms'>
+                  <button className="buttonn md:w-[300px] w-[265px]" title='Explore Rooms'>
                     <img src='roomicon.png' className='h-[34px]'></img>
-                    <h1 className='md:text-[24px] text-[20px] font-semibold'>AVAILABLE ROOMS &gt;</h1>
+                    <h1 className='md:text-[24px] text-[20px] font-semibold'>AVAILABLE ROOMS</h1>
                   </button>
                   </Link>
              </div>
