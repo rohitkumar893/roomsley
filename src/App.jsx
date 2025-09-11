@@ -110,13 +110,13 @@ function App() {
         <div className='landingcontainer flex-1 flex w-[100%] flex-col justify-center items-center'>
           <div className='h-[100%] w-[100%]'>
             <div className='flex flex-col items-center h-full w-full justify-center gap-[48px]'>
-              <div className='herocontainer flex gap-[10px] sm:gap-[14px] w-full justify-center flex-wrap leading-tight tracking-wide gap-y-1'>
+              <div className='herocontainer flex gap-[10px] sm:gap-[14px] w-full justify-center flex-wrap leading-tight tracking-wide gap-y-1 select-none'>
                   <img src="property.png" className='property h-[45px] w-[45px] sm:h-[52px] sm:w-[52px] md:h-[70px] md:w-[70px]' />
                   <h1 className='textlogo text-[47px] sm:text-[52px]  md:text-[71px] text-center font-bold leading-tight tracking-wide'>Find </h1>
                   <h1 className='textlogo text-[47px] sm:text-[52px]  md:text-[71px] text-center font-bold leading-tight tracking-wide'><span className='perfect'>Perfect</span></h1>
                   <h1 className='textlogo text-[47px] sm:text-[52px] md:text-[71px] text-center font-bold leading-tight tracking-wide'> Room.</h1>
               </div>
-                  <h2 className='slogan text-[19px] sm:text-[24px] sm:w-[580px] w-full text-center font-medium text-gray-700'> Finding a room or offering one? Roomsley makes it simple and quick.</h2>
+                  <h2 className='slogan text-[19px] sm:text-[24px] sm:w-[580px] w-full text-center font-medium text-gray-700 select-none'> Finding a room or offering one? Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
                   <button className="buttonn md:w-[300px] w-[265px]" title='Explore Rooms'>
                     <img src='roomicon.png' className='h-[34px]'></img>
