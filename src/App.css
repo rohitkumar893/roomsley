@@ -262,7 +262,7 @@ ul:hover{
   }
 }
 
-@media(max-width:700px){
+@media(max-width:780px){
 .search__input {
   width: 330px;
 }
@@ -272,7 +272,6 @@ ul:hover{
 }
 
 .slogan{
-  padding-left: 30px;
-  padding-right: 30px;
+  visibility: hidden;
 }
 }
