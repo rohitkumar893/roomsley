@@ -14,7 +14,7 @@ html, body, #root{
 }
 
 body{
-  background-image: url('/bg.jpg');
+  background-image: url('/bgimg.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,11 +62,10 @@ body{
 @media(max-width:780px) {
   body
   {
-  background-image: url('/bg.jpg');
+  background-image: url('/bgimg.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 45%;
   }
 }
 
