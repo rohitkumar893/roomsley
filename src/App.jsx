@@ -118,7 +118,7 @@ function App() {
               </div>
                   <h2 className='slogan text-[19px] sm:text-[24px] sm:w-[580px] w-full text-center font-medium text-gray-700 select-none'> Finding a room or offering one? Roomsley makes it simple and quick.</h2>
                   <Link to="/listings">
-                  <button className="buttonn md:w-[300px] w-[265px]" title='Explore Rooms'>
+                  <button className="buttonn md:w-[300px] w-[265px] shadow-gray-900 shadow-md" title='Explore Rooms'>
                     <img src='roomicon.png' className='h-[34px]'></img>
                     <h1 className='md:text-[24px] text-[20px] font-semibold'>AVAILABLE ROOMS</h1>
                   </button>
