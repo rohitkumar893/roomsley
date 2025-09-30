@@ -13,7 +13,7 @@ const Search = () => {
     const fetchResults = async () => {
       try {
         setLoading(true);
-        const response = await fetch("roomsleybackend-production.up.railway.app/api/auth/getlistings", {
+        const response = await fetch("https://roomsleybackend-production.up.railway.app/api/auth/getlistings", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
