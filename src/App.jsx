@@ -36,7 +36,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetch("https://roomsleybackend-production.up.railway.app/ping")
+    fetch("https://roomsleybackend.onrender.com/ping")
       .then((res) => {
         if (!res.ok) throw new Error("Ping failed");
         console.log("Backend is awake");
