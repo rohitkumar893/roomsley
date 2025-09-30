@@ -46,7 +46,7 @@ const handleSubmit = async (e) => {
 
     console.log({ image, price, name, contact, location });
 
-    const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/listings", {
+    const response = await fetch("roomsleybackend-production.up.railway.app/api/auth/listings", {
       method:"POST",
       body:formData,
   })
@@ -90,7 +90,7 @@ const handleSubmit = async (e) => {
     const fetchListings = async () => {
       try {
         setLoading(true);
-        const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/getlistings", {
+        const response = await fetch("roomsleybackend-production.up.railway.app/api/auth/getlistings", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -107,7 +107,7 @@ const handleSubmit = async (e) => {
         };
 
       const deleteList = async (listing) => {
-        const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/deletelisting",{
+        const response = await fetch("roomsleybackend-production.up.railway.app/api/auth/deletelisting",{
           method:"POST",
           headers:{
             "Content-Type":"application/json"
