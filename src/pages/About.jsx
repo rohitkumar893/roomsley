@@ -1,17 +1,11 @@
+import Navbar from '../components/Navbar'
 import './About.css'
-import {Link} from 'react-router-dom'
 
 const About = () => {
   return (
     <>
-    <nav className="h-[68px] w-full flex justify-between items-center bg-gray-800 text-[22px] z-50">
-        <div className='w-full flex justify-start items-center gap-[8px]'>
-          <img src='door.png' className='homeicon h-[35px]'></img>
-          <Link to='/'>
-          <h1 className='text-white'>Roomsley</h1>
-          </Link>
-        </div>
-        </nav>
+    <Navbar />
+
     <div className='aboutpage w-full flex justify-center items-center'>
         
 

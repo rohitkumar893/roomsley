@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@tailwind utilities;
 
 * {
   margin: 0;
@@ -68,5 +67,3 @@ body{
   background-repeat: no-repeat;
   }
 }
-
-@import "tailwindcss";

@@ -93,8 +93,9 @@ ul:hover{
   padding-right: 18px;
 }
 
-.homeicon{
-  margin-left: 25px;
+.navbar{
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .about{

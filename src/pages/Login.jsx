@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Login.css'
 import {Link, useNavigate} from "react-router-dom"
 import { ToastContainer, toast } from 'react-toastify';
+import Navbar from '../components/Navbar';
 
 
 const Login = () => {
@@ -45,10 +46,7 @@ const Login = () => {
   return (
     <>
     <ToastContainer />
-    <nav className="h-[68px] w-full flex justify-start items-center gap-[8px] bg-gray-800 text-[22px]">
-        <img src='door.png' className='homeicon h-[35px]'></img>
-        <Link to='/'><h1 className='text-white'>Roomsley</h1></Link>
-        </nav>
+    <Navbar />
 
     <div className="wrapper">
     <div className="container c1 w-[320px] md:w-[400px]">
