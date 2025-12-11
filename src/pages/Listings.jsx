@@ -47,7 +47,7 @@ const handleSubmit = async (e) => {
 
     console.log({ image, price, name, contact, location });
 
-    const response = await fetch("https://roomsleybackend.onrender.com/api/auth/listings", {
+    const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/listings", {
       method:"POST",
       body:formData,
   })
@@ -89,40 +89,44 @@ const handleSubmit = async (e) => {
 
     
     const fetchListings = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch("https://roomsleybackend.onrender.com/api/auth/getlistings", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+    try {
+          setLoading(true);
+
+          const response = await fetch(
+            "https://roomsleybackendrender.onrender.com/api/auth/listings", 
+            {
+              method: "GET"
+            }
+          );
 
           const data = await response.json();
-              setListings(data);
-            } catch (error) {
-              console.error("❌ Error fetching listings:", error);
-            } finally {
-              setLoading(false);
-            }
-        };
+          setListings(data);
+
+        } catch (error) {
+          console.error("❌ Error fetching listings:", error);
+        } finally {
+          setLoading(false);
+        }
+      };
+
 
       const deleteList = async (listing) => {
-        const response = await fetch("https://roomsleybackend.onrender.com/api/auth/deletelisting",{
-          method:"POST",
-          headers:{
-            "Content-Type":"application/json"
-          },
-          body:JSON.stringify({ _id: listing._id })
-        });
+        try {
+          const response = await fetch(
+            `https://roomsleybackendrender.onrender.com/api/auth/listings/${listing._id}`,
+            { method: "DELETE" }
+          );
 
-        if (response.ok) {
-      toast.success("Listing Removed!");
-      fetchListings();
-      
-      } else {
-        toast.error("Failed to delete listing.");
-      }
+          if (response.ok) {
+            toast.success("Listing Removed!");
+            fetchListings();
+          } else {
+            toast.error("Failed to delete listing.");
+          }
+        } catch (err) {
+          console.error("❌ Delete error:", err);
+          toast.error("Something went wrong!");
+        }
       };
 
 

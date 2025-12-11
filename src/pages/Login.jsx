@@ -20,7 +20,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const response = await fetch("https://roomsleybackend.onrender.com/api/auth/login", {
+        const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
