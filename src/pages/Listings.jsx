@@ -47,7 +47,7 @@ const handleSubmit = async (e) => {
 
     console.log({ image, price, name, contact, location });
 
-    const response = await fetch("https://roomsleybackendrender.onrender.com/api/listings", {
+    const response = await fetch("https://roomsleybackendrender.onrender.com/api/auth/listings", {
       method:"POST",
       body:formData,
   })
@@ -93,7 +93,7 @@ const handleSubmit = async (e) => {
           setLoading(true);
 
           const response = await fetch(
-            "https://roomsleybackendrender.onrender.com/api/listings", 
+            "https://roomsleybackendrender.onrender.com/api/auth/listings", 
             {
               method: "GET"
             }
@@ -113,7 +113,7 @@ const handleSubmit = async (e) => {
       const deleteList = async (listing) => {
         try {
           const response = await fetch(
-            `https://roomsleybackendrender.onrender.com/api/listings/${listing._id}`,
+            `https://roomsleybackendrender.onrender.com/api/auth/listings/${listing._id}`,
             { method: "DELETE" }
           );
 
